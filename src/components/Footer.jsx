@@ -10,7 +10,7 @@ export default function Footer() {
         <div className='section-inner footer-inner'>
           <div className='footer-cta' aria-label='Connect'>
             <p>
-              Looking for thoughtful onboarding or enablement support?{' '}
+              Ready to build better software and stronger teams?{' '}
               <a href='/contact'>Let’s connect.</a>
             </p>
           </div>

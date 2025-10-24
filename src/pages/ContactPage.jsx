@@ -42,8 +42,8 @@ export default function ContactPage() {
             <div className='contact-details'>
               <h1 id='contact-title'>Let’s connect</h1>
               <p className='muted'>
-                I’d love to hear from you — whether it’s about onboarding, enablement strategy, or
-                thoughtful tooling. Drop me a note below, and I’ll get back quickly.
+                I love talking about software, people, and how we build better teams and tools. <br />
+                Drop a note below — I’ll get back to you soon.
               </p>
               <div className='contact-links'>
                 <ChipLink

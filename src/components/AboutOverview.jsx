@@ -21,7 +21,7 @@ export default function AboutOverview() {
             </p>
           </div>
           <div className='about-overview-photo' aria-hidden='true'>
-            <img src='/images/about.JPG' alt='Bethany Curtis' />
+            <img src='/images/about.png' alt='Bethany Curtis' />
           </div>
         </div>
       </div>
