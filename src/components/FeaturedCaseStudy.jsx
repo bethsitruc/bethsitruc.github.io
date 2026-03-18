@@ -2,7 +2,7 @@ import React from 'react'
 import { caseStudies } from '../data/caseStudies'
 import ChipLink from './ChipLink'
 
-const featuredSlugs = ['github-engineering-onboarding', 'flashcards-ios']
+const featuredSlugs = ['github-engineering-onboarding', 'jeemes-akers-website']
 
 export default function FeaturedCaseStudy() {
   const featured = featuredSlugs.map(slug => caseStudies.find(c => c.slug === slug)).filter(Boolean)

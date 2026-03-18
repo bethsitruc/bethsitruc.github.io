@@ -7,6 +7,7 @@ export default function Header({ variant = 'home' }) {
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
+    { label: 'Apps', path: '/apps' },
     { label: 'Case Studies', path: '/case-studies' },
     { label: 'Contact', path: '/contact' },
   ]

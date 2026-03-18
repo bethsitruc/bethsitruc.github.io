@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -10,12 +11,14 @@ export default function Footer() {
         <div className='section-inner footer-inner'>
           <div className='footer-cta' aria-label='Connect'>
             <p>
-              Ready to build better software and stronger teams?{' '}
-              <a href='/contact'>Let’s connect.</a>
+              Ready to build better software and stronger teams? <Link to='/contact'>Let’s connect.</Link>
             </p>
           </div>
           <div className='footer-bottom'>
             <p>&copy; 2025 Bethany Curtis</p>
+            <p>
+              <Link to='/privacy-policy'>Privacy Policies</Link>
+            </p>
           </div>
         </div>
       </footer>

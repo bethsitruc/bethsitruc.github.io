@@ -143,13 +143,17 @@ function CaseStudyBlock({ block }) {
   return null
 }
 
-export default function CaseStudyTemplate({ study }) {
+export default function CaseStudyTemplate({
+  study,
+  collectionLabel = 'Case Studies',
+  collectionTo = '/case-studies',
+}) {
   if (!study) return null
 
   const { title, subtitle, hero, overview, blocks = [] } = study
 
   return (
-    <CaseStudyLayout title={title}>
+    <CaseStudyLayout title={title} collectionLabel={collectionLabel} collectionTo={collectionTo}>
       <CaseStudyIntro title={title} subtitle={subtitle} hero={hero} overview={overview} />
       {blocks.map((block, idx) => (
         <CaseStudyBlock block={block} key={idx} />

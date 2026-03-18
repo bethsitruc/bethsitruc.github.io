@@ -1,10 +1,15 @@
 import React from 'react'
 import Breadcrumbs from './Breadcrumbs'
 
-export default function CaseStudyLayout({ title, children }) {
+export default function CaseStudyLayout({
+  title,
+  children,
+  collectionLabel = 'Case Studies',
+  collectionTo = '/case-studies',
+}) {
   const items = [
     { label: 'Home', to: '/' },
-    { label: 'Case Studies', to: '/case-studies' },
+    { label: collectionLabel, to: collectionTo },
     { label: title },
   ]
 

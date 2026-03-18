@@ -46,3 +46,4 @@ Pushes to `main` trigger a GH Actions workflow that builds and deploys to GitHub
 - Update the Open Graph/social preview image by placing a card at `/images/social-card.jpg` and adjusting the meta tag in `index.html`.
 - Font Awesome icons load via the script tag in `index.html`.
 - Case-study galleries live in `ScreenshotGallery.jsx` / `EmblaGallery.jsx` and only load Embla when needed.
+- App privacy policies are published under `/privacy-policy/<app-slug>`, with an index page at `/privacy-policy`.

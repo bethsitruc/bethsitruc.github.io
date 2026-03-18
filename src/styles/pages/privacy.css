@@ -1,0 +1,106 @@
+/* Privacy policy page */
+.privacy-policy-header {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.privacy-policy-header h1 {
+  margin: 0;
+  color: var(--brand);
+  font-size: clamp(2.3rem, 5vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.privacy-policy-kicker {
+  margin: 0;
+  color: var(--highlight);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.privacy-policy-card {
+  max-width: 760px;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 18px 36px rgba(31, 41, 51, 0.1);
+}
+
+.privacy-policy-card--summary {
+  max-width: none;
+  align-content: start;
+}
+
+.privacy-policy-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.privacy-policy-summary {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.privacy-policy-summary h2 {
+  margin: 0;
+  color: var(--brand);
+  font-size: 1.45rem;
+}
+
+.privacy-policy-backlink {
+  margin: 0;
+}
+
+.privacy-policy-backlink a {
+  color: var(--highlight);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.privacy-policy-backlink a:hover,
+.privacy-policy-backlink a:focus {
+  text-decoration: underline;
+}
+
+.privacy-policy-card > p:first-child {
+  color: var(--muted);
+}
+
+.privacy-policy-section {
+  display: grid;
+  gap: 0.65rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 102, 102, 0.14);
+}
+
+.privacy-policy-section:first-of-type {
+  padding-top: 0;
+  border-top: none;
+}
+
+.privacy-policy-section h2 {
+  margin: 0;
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.privacy-policy-section h2::after {
+  display: none;
+}
+
+.privacy-policy-section p {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .privacy-policy-card {
+    padding: 1.4rem;
+    border-radius: 14px;
+  }
+}

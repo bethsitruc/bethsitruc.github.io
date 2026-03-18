@@ -1,26 +1,18 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import { caseStudies, caseStudyDetails } from '../data/caseStudies'
+import { Navigate, useParams } from 'react-router-dom'
+import { caseStudyDetails } from '../data/caseStudies'
 import CaseStudyTemplate from './CaseStudyTemplate'
 import ChipLink from './ChipLink'
 
 export default function CaseStudyDetail() {
   const { slug } = useParams()
-  const cs = caseStudies.find(c => c.slug === slug)
 
-  if (!cs) {
-    return (
-      <main>
-        <section className='section-block'>
-          <div className='section-inner'>
-            <p>Case study not found.</p>
-            <p>
-              <ChipLink to='/case-studies'>Back to Case Studies</ChipLink>
-            </p>
-          </div>
-        </section>
-      </main>
-    )
+  if (slug === 'affirmation-app') {
+    return <Navigate to='/apps/grounded' replace />
+  }
+
+  if (slug === 'flashcards-ios') {
+    return <Navigate to='/apps/flashcards-ios' replace />
   }
 
   const detail = caseStudyDetails[slug]

@@ -13,27 +13,13 @@ export const caseStudies = [
     summary:
       'Rebuilt an author’s website in React with a Markdown publishing system for a faster, writing-first experience.',
   },
-  {
-    slug: 'flashcards-ios',
-    title: 'Flashcards iOS App',
-    subtitle: 'SwiftUI • SwiftData • iOS',
-    summary:
-      'In-progress: A playful, customizable study app for kids with SwiftUI + SwiftData, designed to grow with learners.',
-  },
-  {
-    slug: 'affirmation-app',
-    title: 'Affirmation App (iOS)',
-    subtitle: 'SwiftUI • Habit Design',
-    summary:
-      'In-progress: A minimal iOS app delivering daily affirmations, with upcoming AI-powered personalization.',
-  },
 ]
 
 export const caseStudyDetails = {
   'affirmation-app': {
     slug: 'affirmation-app',
     title: 'Affirmation App (iOS)',
-    subtitle: 'SwiftUI • Habit Design',
+    subtitle: 'SwiftUI • Apple Intelligence • Habit Design',
     hero: {
       src: '/images/affirm.png',
       alt: 'Affirmation app daily card and saved affirmations screens',
@@ -41,7 +27,7 @@ export const caseStudyDetails = {
     overview: {
       title: 'Overview',
       body: [
-        'I’m creating a simple, uplifting iOS app to deliver daily affirmations. The focus is on frictionless habit formation: fast startup, clean typography, gentle motion, and a content pipeline that makes updating affirmations effortless.',
+        'I’m building a calm, polished iOS app for daily affirmations that supports both quick encouragement and deeper personalization. The experience now includes Apple Intelligence-assisted drafting, favorites, personal affirmations, shareable cards, widget support, and visual customization through themes and typography.',
       ],
     },
     blocks: [
@@ -51,15 +37,16 @@ export const caseStudyDetails = {
           {
             title: 'My Role',
             body: [
-              'Designer and developer. Leading UI design, building the app in SwiftUI, and creating the content pipeline for ongoing affirmation updates.',
+              'Designer and developer. I am shaping the interaction design, visual system, SwiftUI implementation, content model, personalization flow, and the new Apple Intelligence-assisted affirmation experience.',
             ],
           },
           {
             title: 'Tech Stack',
             list: [
               'Swift, SwiftUI',
-              'Simple state management',
-              'Content system for affirmation delivery',
+              'Apple Foundation Models / Apple Intelligence integration',
+              'Local-first data and content management',
+              'Widget and share-card support',
               'Xcode toolchain',
             ],
           },
@@ -71,26 +58,26 @@ export const caseStudyDetails = {
           {
             title: 'Progress So Far',
             list: [
-              'Minimal UI with accessible typography',
-              'Daily affirmation card view',
-              'Saved affirmations list',
-              'Light animations for transitions and modality',
-              'Basic content pipeline for updating affirmations',
+              'Home feed with a featured daily affirmation and supporting cards',
+              'Apple Intelligence flow for generating personalized affirmations with focus and tone controls',
+              'Favorites, personal affirmations, and editing flows',
+              'Theme and typography customization with live preview',
+              'Share-card generation and widget support for lightweight daily visibility',
             ],
           },
           {
             title: 'Challenges',
             body: [
-              'Balancing simplicity with delight. Many affirmation apps feel cluttered; I wanted something lightweight that encourages quick, positive daily use without distractions.',
+              'The hardest part has been keeping the app emotionally calm while still expanding its feature set. As Apple Intelligence, widgets, personal submissions, theme settings, and sharing tools were added, the challenge became preserving a lightweight, reassuring experience instead of letting the product feel crowded or overly “wellness app” polished.',
             ],
-          },
-          {
-            title: 'Next Steps',
-            list: [
-              'Add an editable home screen widget',
-              'Incorporate Apple Foundation Models to refresh and generate new affirmations',
-              'Expand personalization options (themes, categories)',
-            ],
+            footer: {
+              title: 'Next Steps',
+              list: [
+                'Continue refining AI prompt controls and generated-affirmation review flows',
+                'Polish onboarding and release-readiness details for launch',
+                'Prepare App Store assets and final launch messaging',
+              ],
+            },
           },
         ],
       },
@@ -100,7 +87,7 @@ export const caseStudyDetails = {
           {
             title: 'Vision',
             body: [
-              'A minimal, calming experience that supports habit-building through consistency and tone — encouraging people to pause, reflect, and carry affirmations into their daily life.',
+              'A quiet, beautifully designed affirmation app that feels personal rather than generic: something people can open for a grounded daily reset, customize to their own taste, and carry into their day through favorites, widgets, and shareable moments.',
             ],
             cta: {
               label: 'View on GitHub',
@@ -116,24 +103,64 @@ export const caseStudyDetails = {
         variant: 'mobile',
         items: [
           {
-            src: '/images/case-studies/ACaseStudyHome.png',
-            alt: 'Affirmation App home screen showing daily card and prompt',
-            caption: 'Daily affirmation home',
+            src: '/images/apps/Grounded/Home.png',
+            alt: 'Grounded home screen with a featured daily affirmation and Apple Intelligence entry point',
+            caption: 'Home feed with daily affirmation and AI entry point',
           },
           {
-            src: '/images/case-studies/ACaseStudyFavorites.png',
-            alt: 'Affirmation App favorites list view',
-            caption: 'Saved favorites library',
+            src: '/images/apps/Grounded/Favorites.png',
+            alt: 'Grounded favorites screen showing pinned encouragement cards',
+            caption: 'Favorites keeps saved encouragement close at hand',
           },
           {
-            src: '/images/case-studies/ACaseStudyMyAffirmationsPage.png',
-            alt: 'Affirmation App My Affirmations management page',
-            caption: 'Manage personal affirmations',
+            src: '/images/apps/Grounded/My Affirmations.png',
+            alt: 'Grounded My Affirmations screen showing a user-submitted affirmation',
+            caption: 'My Affirmations stores user-written and generated entries',
           },
           {
-            src: '/images/case-studies/ACaseStudyCreate.png',
-            alt: 'Affirmation App create affirmation screen',
-            caption: 'Create new affirmation',
+            src: '/images/apps/Grounded/My Affirmations - Empty.png',
+            alt: 'Grounded empty state for My Affirmations before any personal entries have been added',
+            caption: 'Empty state guides the first personal affirmation',
+          },
+          {
+            src: '/images/apps/Grounded/Edit Affirmation.png',
+            alt: 'Grounded edit affirmation screen with text editing and save and delete actions',
+            caption: 'Editing flow for personal affirmations',
+          },
+          {
+            src: '/images/apps/Grounded/Apple Intelligence.png',
+            alt: 'Grounded Apple Intelligence prompt screen with focus and tone controls',
+            caption: 'Apple Intelligence drafting with focus and tone controls',
+          },
+          {
+            src: '/images/apps/Grounded/Generated Affirmation.png',
+            alt: 'Grounded generated affirmation preview showing AI generation details and save options',
+            caption: 'Generated affirmation preview before saving',
+          },
+          {
+            src: '/images/apps/Grounded/Share Choice.png',
+            alt: 'Grounded share selection screen listing favorite and all affirmations to choose from',
+            caption: 'Choose which affirmation to turn into a share card',
+          },
+          {
+            src: '/images/apps/Grounded/Share.png',
+            alt: 'Grounded share card editor with app badge toggle and share image button',
+            caption: 'Share-card generation for exporting encouragement',
+          },
+          {
+            src: '/images/apps/Grounded/Theme.png',
+            alt: 'Grounded appearance screen showing color theme and typography customization options',
+            caption: 'Theme and typography customization',
+          },
+          {
+            src: '/images/apps/Grounded/Settings.png',
+            alt: 'Grounded settings screen showing refresh options, appearance settings, and widget guidance',
+            caption: 'Settings for refresh cadence, appearance, and widgets',
+          },
+          {
+            src: '/images/apps/Grounded/Widgets.png',
+            alt: 'iPhone home screen showing Grounded widgets in large and medium sizes',
+            caption: 'Widgets extend affirmations to the home screen',
           },
         ],
       },
