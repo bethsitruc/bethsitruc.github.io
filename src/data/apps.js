@@ -1,12 +1,13 @@
 export const apps = [
   {
     slug: 'grounded',
-    name: 'Grounded',
+    name: 'Grounded: Affirmation App',
     subtitle: 'iOS • Affirmations • Apple Intelligence',
-    status: 'Launching Soon',
-    statusTone: 'launching',
-    image: '/images/affirm.png',
-    imageAlt: 'Grounded affirmation app screens',
+    status: 'Now Available',
+    statusTone: 'released',
+    image: '/images/apps/Grounded/icon.png',
+    imageAlt: 'Grounded app icon',
+    imageStyle: 'icon',
     summary:
       'A calm, customizable affirmation app with Apple Intelligence-assisted drafting, favorites, share cards, and widget support.',
     bullets: [
@@ -25,18 +26,19 @@ export const apps = [
         variant: 'ghost',
       },
       {
-        label: 'View on GitHub',
-        href: 'https://github.com/bethsitruc/AffirmationApp',
+        label: 'View in App Store',
+        href: 'https://apps.apple.com/us/app/grounded-affirmation-app/id6760471241',
         external: true,
       },
     ],
     detail: {
       slug: 'grounded',
-      title: 'Grounded',
+      title: 'Grounded: Affirmation App',
       subtitle: 'SwiftUI • Apple Intelligence • Habit Design',
       hero: {
-        src: '/images/affirm.png',
-        alt: 'Grounded app screens showing daily affirmation and favorites',
+        src: '/images/apps/Grounded/icon.png',
+        alt: 'Grounded app icon',
+        style: 'icon',
       },
       overview: {
         title: 'Overview',
@@ -104,8 +106,8 @@ export const apps = [
                 'A quiet, beautifully designed affirmation app that feels personal rather than generic: something people can open for a grounded daily reset, customize to their own taste, and carry into their day through favorites, widgets, and shareable moments.',
               ],
               cta: {
-                label: 'View on GitHub',
-                href: 'https://github.com/bethsitruc/AffirmationApp',
+                label: 'View in App Store',
+                href: 'https://apps.apple.com/us/app/grounded-affirmation-app/id6760471241',
                 variant: 'ghost',
                 external: true,
               },
@@ -182,13 +184,125 @@ export const apps = [
     },
   },
   {
+    slug: 'friendly-competitions',
+    name: 'Friendly Competitions',
+    subtitle: 'iOS • Offline-first • Event Scoring',
+    status: 'In Progress',
+    statusTone: 'progress',
+    image: '/images/apps/FriendlyCompetitions/icon.png',
+    imageAlt: 'Friendly Competitions app icon',
+    imageStyle: 'icon',
+    summary:
+      'An offline-first iOS app for hosting lighthearted competitions, collecting votes, and settling the friendly debate with clear standings.',
+    bullets: [
+      'Create events with unlimited entries, default or custom categories, and configurable medal points',
+      'Supports pass-the-phone judging and invite-code judging on the same device',
+      'Shows participation, standings, ties, and shareable results in one polished flow',
+    ],
+    ctas: [
+      {
+        label: 'View Details',
+        to: '/apps/friendly-competitions',
+      },
+      {
+        label: 'Request Preview',
+        to: '/contact?subject=Friendly%20Competitions%20Preview',
+        variant: 'ghost',
+      },
+    ],
+    detail: {
+      slug: 'friendly-competitions',
+      title: 'Friendly Competitions',
+      subtitle: 'SwiftUI • SwiftData • Offline-first Scoring',
+      hero: {
+        src: '/images/apps/FriendlyCompetitions/icon.png',
+        alt: 'Friendly Competitions app icon',
+        style: 'icon',
+      },
+      overview: {
+        title: 'Overview',
+        body: [
+          'Friendly Competitions is an offline-first iOS app for hosting lighthearted contests and collecting everyone’s favorites without turning the experience into spreadsheet work. It helps a host set up an event, define entries and categories, collect votes, and view clear standings on the same device.',
+        ],
+      },
+      blocks: [
+        {
+          type: 'calloutRow',
+          items: [
+            {
+              title: 'My Role',
+              body: [
+                'Designer and developer. I am shaping the event flow, SwiftUI interface, scoring model, local persistence, and the host and judge experiences for a product that needs to feel simple under real-world pressure.',
+              ],
+            },
+            {
+              title: 'Tech Stack',
+              list: [
+                'Swift, SwiftUI, SwiftData',
+                'Offline-first local persistence',
+                'Scoring and tie-resolution logic',
+                'Share and export helpers for recaps and results',
+                'Xcode toolchain',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'duo',
+          items: [
+            {
+              title: 'Progress So Far',
+              list: [
+                'Competition creation with unlimited entries',
+                'Default categories plus custom category support',
+                'Configurable Gold, Silver, and Bronze points per category',
+                'Pass-the-phone and invite-code judging modes on one device',
+                'Participation tracking, standings, category winners, overall winners, and tie handling',
+              ],
+            },
+            {
+              title: 'Challenges',
+              body: [
+                'The product has to stay playful and fast while still handling real scoring complexity. The hard part is making setup, voting, lock/finalize states, and result interpretation feel obvious for casual users without oversimplifying the underlying rules.',
+              ],
+              footer: {
+                title: 'Next Steps',
+                list: [
+                  'Refine the host dashboard and judge handoff flow',
+                  'Add stronger export and recap options for finished events',
+                  'Polish the visual system and capture screenshots for the portfolio page',
+                ],
+              },
+            },
+          ],
+        },
+        {
+          type: 'callout',
+          items: [
+            {
+              title: 'Vision',
+              body: [
+                'A joyful utility for bake-offs, classroom contests, family voting, or team events: structured enough to keep scoring fair, but light enough that the event still feels social and fun.',
+              ],
+              cta: {
+                label: 'Request Preview',
+                href: '/contact?subject=Friendly%20Competitions%20Preview',
+              },
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
     slug: 'flashcards-ios',
     name: 'Flashcards',
     subtitle: 'iOS • Education • SwiftData',
     status: 'In Progress',
     statusTone: 'progress',
-    image: '/images/flashcards.png',
-    imageAlt: 'Flashcards iOS app screens',
+    image: '/images/apps/Flashcards/icon.png',
+    imageAlt: 'Family Flashcards app icon',
+    imageStyle: 'icon',
     summary:
       'A family-first study app built for kids, with learner profiles, customizable decks, and a tactile, flexible study flow.',
     bullets: [
@@ -216,8 +330,9 @@ export const apps = [
       title: 'Flashcards',
       subtitle: 'SwiftUI • SwiftData • iOS',
       hero: {
-        src: '/images/flashcards.png',
-        alt: 'Flashcards iOS app screens',
+        src: '/images/apps/Flashcards/icon.png',
+        alt: 'Family Flashcards app icon',
+        style: 'icon',
       },
       overview: {
         title: 'Overview',
@@ -287,37 +402,6 @@ export const apps = [
                 label: 'Request Demo',
                 href: '/contact?subject=Flashcards%20App%20Demo%20Request',
               },
-            },
-          ],
-        },
-        {
-          type: 'gallery',
-          variant: 'mobile',
-          items: [
-            {
-              src: '/images/case-studies/FCCaseStudyLibrary.png',
-              alt: 'Flashcards app library overview',
-              caption: 'Library home with skill-based categories',
-            },
-            {
-              src: '/images/case-studies/FCCaseStudyLibraryDrilldown.png',
-              alt: 'Flashcards app library drilldown screen',
-              caption: 'Category drilldown and deck preview',
-            },
-            {
-              src: '/images/case-studies/FCCaseStudyLibraryGrade.png',
-              alt: 'Flashcards library grade-level interface',
-              caption: 'Library home with grade-level categories',
-            },
-            {
-              src: '/images/case-studies/FCCaseStudyProfile.png',
-              alt: 'Flashcards app profile customization screen',
-              caption: 'Profile customized for each learner',
-            },
-            {
-              src: '/images/case-studies/FCCaseStudySettings.png',
-              alt: 'Flashcards app settings page',
-              caption: 'Settings page for profile and deck management',
             },
           ],
         },

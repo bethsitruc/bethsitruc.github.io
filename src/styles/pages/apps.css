@@ -72,6 +72,11 @@
   color: var(--brand);
 }
 
+.app-status--released {
+  background: rgba(80, 143, 112, 0.14);
+  color: #2f6f55;
+}
+
 .app-card__summary {
   margin: 0;
   color: var(--muted);
@@ -122,6 +127,25 @@
   object-position: top center;
 }
 
+.app-card__frame--icon {
+  width: min(100%, 184px);
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  box-shadow: none;
+}
+
+.app-card__frame--icon::after {
+  display: none;
+}
+
+.app-card__frame--icon img {
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 28px rgba(31, 41, 51, 0.18));
+}
+
 @media (max-width: 900px) {
   .apps-showcase__header {
     flex-direction: column;
@@ -144,6 +168,10 @@
 
   .app-card__frame {
     width: min(100%, 240px);
+  }
+
+  .app-card__frame--icon {
+    width: min(100%, 160px);
   }
 
   .app-card__actions {

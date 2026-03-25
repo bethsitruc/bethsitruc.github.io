@@ -60,6 +60,23 @@
   pointer-events: none;
 }
 
+.case-study-hero--icon {
+  max-width: 220px;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.case-study-hero--icon::after {
+  display: none;
+}
+
+.case-study-hero--icon img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 30px rgba(31, 41, 51, 0.18));
+}
+
 .case-study-callout {
   background: var(--surface);
   border-radius: 20px;

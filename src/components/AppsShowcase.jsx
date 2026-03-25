@@ -38,7 +38,9 @@ function AppCard({ app }) {
       </div>
 
       <div className='app-card__media' aria-hidden='true'>
-        <div className='app-card__frame'>
+        <div
+          className={`app-card__frame${app.imageStyle ? ` app-card__frame--${app.imageStyle}` : ''}`}
+        >
           <img src={app.image} alt={app.imageAlt || ''} />
         </div>
       </div>

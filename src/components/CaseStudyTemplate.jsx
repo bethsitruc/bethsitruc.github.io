@@ -57,7 +57,7 @@ function CaseStudyIntro({ title, subtitle, hero, overview }) {
   return (
     <section className='section-block'>
       <div className='section-inner case-study-intro'>
-        <div className='case-study-hero'>
+        <div className={`case-study-hero${hero.style ? ` case-study-hero--${hero.style}` : ''}`}>
           <img src={hero.src} alt={hero.alt} />
         </div>
 
