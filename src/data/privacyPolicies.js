@@ -2,40 +2,45 @@ export const privacyPolicies = [
   {
     slug: 'grounded',
     appName: 'Grounded: Affirmation App',
-    effectiveDate: 'March 2026',
+    effectiveDate: 'April 2026',
     intro: 'Grounded: Affirmation App ("we", "our", or "us") respects your privacy.',
     summary:
-      'A simple, device-only privacy policy for Grounded, which stores affirmations and preferences locally and does not transmit personal data.',
+      'Grounded stores limited app data for affirmations, favorites, and appearance preferences, with optional iCloud sync and Apple Intelligence used only when you choose to generate an affirmation.',
     sections: [
       {
         title: 'Information We Collect',
         paragraphs: [
-          'We do not collect, store, or share any personal information.',
-          'All data, including saved affirmations and preferences, is stored locally on your device and is not transmitted to any external servers.',
+          'Grounded stores limited information needed to provide the app’s core features. This includes personal affirmations you create, affirmations you mark as favorites, and appearance preferences such as selected theme and font.',
+        ],
+      },
+      {
+        title: 'How We Use Information',
+        paragraphs: [
+          'This information is used only to provide app functionality, including saving your content, displaying your favorites, personalizing the app’s appearance, and keeping your experience consistent across your devices.',
+        ],
+      },
+      {
+        title: 'iCloud and CloudKit',
+        paragraphs: [
+          'If iCloud is enabled on your device, Grounded uses Apple’s iCloud and CloudKit services to sync your personal affirmations, favorites, and appearance preferences across your devices. This data is associated with your Apple account only for synchronization and app functionality.',
+        ],
+      },
+      {
+        title: 'Apple Intelligence',
+        paragraphs: [
+          'Grounded includes an optional affirmation generation feature. Apple Intelligence is only used when you explicitly choose to generate an affirmation while creating one. It is not used automatically in the background.',
         ],
       },
       {
         title: 'Third-Party Services',
         paragraphs: [
-          'This app does not use third-party analytics, tracking, or advertising services.',
+          'Grounded retrieves refreshed quote content from ZenQuotes to update the home feed. Grounded does not use your personal affirmations or favorites for advertising or tracking.',
         ],
       },
       {
-        title: 'Data Security',
+        title: 'Advertising and Tracking',
         paragraphs: [
-          'Because no personal data is collected or transmitted, your information remains private on your device.',
-        ],
-      },
-      {
-        title: 'Children’s Privacy',
-        paragraphs: [
-          'Grounded does not knowingly collect any personal information from children.',
-        ],
-      },
-      {
-        title: 'Changes to This Policy',
-        paragraphs: [
-          'We may update this Privacy Policy from time to time. Any changes will be reflected on this page.',
+          'Grounded does not use your information for targeted advertising, does not sell your personal information, and does not track you across other companies’ apps or websites.',
         ],
       },
       {
