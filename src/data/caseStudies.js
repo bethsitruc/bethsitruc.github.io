@@ -11,7 +11,7 @@ export const caseStudies = [
     title: 'JeemesAkers.com Website Rebuild',
     subtitle: 'React • Vite • Markdown Publishing',
     summary:
-      'Rebuilt an author’s website in React with a Markdown publishing system for a faster, writing-first experience.',
+      'Rebuilt and continue to maintain an author’s website in React with a streamlined publishing workflow designed for ongoing writing and site updates.',
   },
 ]
 
@@ -357,7 +357,7 @@ export const caseStudyDetails = {
     overview: {
       title: 'Overview',
       body: [
-        'My father’s author website was built in Wix, but the design needed a refresh and the publishing process was clunky. I rebuilt the site from scratch in React with Vite, focusing on performance, maintainability, and a writing-first workflow.',
+        'I rebuilt and now continue to maintain JeemesAkers.com as a custom React site focused on performance, maintainability, and a writing-first publishing workflow. The original site had been hosted on Wix, but the long-term goal was a platform that was easier to manage, easier to update, and better suited to ongoing publishing.',
       ],
     },
     blocks: [
@@ -367,16 +367,16 @@ export const caseStudyDetails = {
           {
             title: 'My Role',
             body: [
-              'Designer and developer. Handled design translation, frontend build, and content system setup.',
+              'Designer, developer, and site maintainer. I handled the rebuild, frontend implementation, content architecture, publishing workflow, deployment setup, and ongoing updates to keep the site current.',
             ],
           },
           {
             title: 'Contributions',
             list: [
-              'Replicated Wix design in React and Tailwind, modernizing UI for responsiveness',
-              'Built a Markdown-driven publishing system for essays and “Missives”',
-              'Structured file system for easy content management without a CMS',
-              'Optimized site with Vite for fast load times and easy deployment',
+              'Migrated the site from Wix into a custom React and Vite codebase',
+              'Built and maintain a Markdown-driven publishing system for essays and “Missives”',
+              'Structured the file system and content flow so updates stay manageable without a CMS',
+              'Continue handling site upkeep, content changes, and deployment maintenance',
             ],
           },
         ],
@@ -387,15 +387,15 @@ export const caseStudyDetails = {
           {
             title: 'Challenges',
             body: [
-              'Balancing fidelity to the original design (which readers were used to) with modernizing the stack and making future updates simple for a non-technical user.',
+              'Balancing fidelity to the original design, which readers were already familiar with, while moving the site off Wix and into a codebase that would be easier to maintain over time. The challenge was not just rebuilding the site once, but creating a setup that could support ongoing publishing and updates without adding friction.',
             ],
           },
           {
             title: 'Outcomes',
             list: [
               'Cleaner, faster website aligned to the original look-and-feel',
-              'Simple publishing process: drop in Markdown → deploy',
-              'Future-ready foundation that can scale with new content or features',
+              'More sustainable publishing workflow for ongoing “Missives” and content updates',
+              'A maintainable foundation that supports both day-to-day upkeep and future growth',
             ],
           },
         ],
@@ -406,7 +406,7 @@ export const caseStudyDetails = {
           {
             title: 'Vision',
             body: [
-              'A lightweight, maintainable platform that lets an author focus on writing, not web management.',
+              'A lightweight, maintainable author platform that supports both publishing and long-term stewardship, so the focus stays on writing instead of fighting the website.',
             ],
             cta: {
               label: 'Visit Site',
