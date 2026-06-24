@@ -2,15 +2,21 @@ export const privacyPolicies = [
   {
     slug: 'grounded',
     appName: 'Grounded: Affirmation App',
-    effectiveDate: 'April 2026',
+    effectiveDate: 'June 2026',
     intro: 'Grounded: Affirmation App ("we", "our", or "us") respects your privacy.',
     summary:
-      'Grounded stores limited app data for affirmations, favorites, and appearance preferences, with optional iCloud sync and Apple Intelligence used only when you choose to generate an affirmation.',
+      'The developer does not collect personal data from Grounded. The app stores affirmations, favorites, and appearance preferences on your device, with optional iCloud sync and Apple Intelligence used only when you choose to generate an affirmation.',
     sections: [
       {
-        title: 'Information We Collect',
+        title: 'Data the Developer Collects',
         paragraphs: [
-          'Grounded stores limited information needed to provide the app’s core features. This includes personal affirmations you create, affirmations you mark as favorites, and appearance preferences such as selected theme and font.',
+          'The developer does not collect, receive, sell, rent, or share personal data from Grounded.',
+        ],
+      },
+      {
+        title: 'Information Stored in the App',
+        paragraphs: [
+          'Grounded stores limited information on your device to provide the app’s core features. This includes personal affirmations you create, affirmations you mark as favorites, and appearance preferences such as selected theme and font.',
         ],
       },
       {
@@ -22,7 +28,7 @@ export const privacyPolicies = [
       {
         title: 'iCloud and CloudKit',
         paragraphs: [
-          'If iCloud is enabled on your device, Grounded uses Apple’s iCloud and CloudKit services to sync your personal affirmations, favorites, and appearance preferences across your devices. This data is associated with your Apple account only for synchronization and app functionality.',
+          'If iCloud is enabled on your device, Grounded uses Apple’s iCloud and CloudKit services to sync your personal affirmations, favorites, and appearance preferences across your devices. The developer does not operate iCloud and does not receive or access your iCloud-synced Grounded data.',
         ],
       },
       {
@@ -34,7 +40,7 @@ export const privacyPolicies = [
       {
         title: 'Third-Party Services',
         paragraphs: [
-          'Grounded retrieves refreshed quote content from ZenQuotes to update the home feed. Grounded does not use your personal affirmations or favorites for advertising or tracking.',
+          'Grounded may retrieve refreshed quote content from ZenQuotes to update the home feed. Grounded does not send your personal affirmations, favorites, or appearance preferences to ZenQuotes, and does not use your information for advertising or tracking.',
         ],
       },
       {
@@ -45,57 +51,87 @@ export const privacyPolicies = [
       },
       {
         title: 'Contact',
-        paragraphs: [
-          'If you have any questions about this Privacy Policy, you can contact us at:',
-        ],
+        paragraphs: ['If you have any questions about this Privacy Policy, you can contact us at:'],
       },
     ],
     contactEmail: 'bethanycurtis.builds@gmail.com',
   },
   {
     slug: 'flashcards-ios',
-    appName: 'Flashcards iOS App',
-    effectiveDate: 'March 2026',
-    intro: 'Flashcards iOS App ("we", "our", or "us") respects your privacy.',
+    appName: 'Family Flashcards',
+    effectiveDate: 'June 2026',
+    intro: 'Family Flashcards ("we", "our", or "us") respects your privacy.',
     summary:
-      'A draft app-specific privacy policy for Flashcards iOS App, assuming learner profiles, deck preferences, and study settings remain stored only on device.',
+      'Family Flashcards is a parent-managed learning app that stores study data locally on your device and can optionally sync that data through your personal iCloud account.',
     sections: [
       {
-        title: 'Information We Collect',
+        title: 'Data the Developer Collects',
         paragraphs: [
-          'We do not collect, store, or share any personal information.',
-          'All data, including learner profiles, saved decks, progress preferences, and app settings, is stored locally on your device and is not transmitted to any external servers.',
+          'The developer does not collect, receive, sell, rent, or share personal data from Family Flashcards.',
+        ],
+        list: [
+          'advertising',
+          'tracking',
+          'analytics SDKs',
+          'third-party data brokers',
+          'developer-operated accounts',
+          'developer-operated servers',
+          'push notifications',
         ],
       },
       {
-        title: 'Third-Party Services',
-        paragraphs: [
-          'This app does not use third-party analytics, tracking, advertising, or external data-processing services.',
+        title: 'Information Stored in the App',
+        paragraphs: ['Family Flashcards may store the following information on your device:'],
+        list: [
+          'learner profiles',
+          'selected and installed decks',
+          'custom flashcards',
+          'imported school-list text',
+          'study progress',
+          'app preferences',
         ],
       },
       {
-        title: 'Data Security',
+        title: 'How We Use Information',
+        paragraphs: ['This information is used only to provide the app’s learning features.'],
+      },
+      {
+        title: 'iCloud Sync',
         paragraphs: [
-          'Because no personal data is collected or transmitted, your information remains private on your device.',
+          'If iCloud is enabled for Family Flashcards, app data may sync through Apple’s iCloud and CloudKit service to other devices signed in to the same Apple ID.',
+          'The developer does not operate the iCloud service and does not receive or access your iCloud-synced Family Flashcards data. iCloud data is handled by Apple according to Apple’s privacy practices and your iCloud settings.',
+        ],
+      },
+      {
+        title: 'Camera, Photos, Images, and PDFs',
+        paragraphs: [
+          'Family Flashcards can help parents create custom decks from school lists, worksheets, photos, images, or PDFs.',
+          'If you choose to use these features, the app may request access to the camera, selected photos, or selected files. These items are used to create flashcards in the app. The developer does not receive copies of your photos, images, PDFs, imported text, or custom flashcards.',
         ],
       },
       {
         title: 'Children’s Privacy',
         paragraphs: [
-          'Flashcards iOS App is designed for family use and does not knowingly collect any personal information from children.',
+          'Family Flashcards is intended to be configured by parents or guardians and then used by children for supervised study.',
+          'The developer does not knowingly collect personal information from children through Family Flashcards.',
+        ],
+      },
+      {
+        title: 'Deleting Data',
+        paragraphs: [
+          'You can delete learner profiles and decks inside the app. Family Flashcards also includes a reset option that deletes local app data, including learner profiles, custom decks, installed decks, and progress.',
+          'If iCloud sync is enabled, deletions may sync to other devices signed in to the same iCloud account.',
         ],
       },
       {
         title: 'Changes to This Policy',
         paragraphs: [
-          'We may update this Privacy Policy from time to time. Any changes will be reflected on this page.',
+          'This privacy policy may be updated from time to time. Updates will be posted on this page with a new effective date.',
         ],
       },
       {
         title: 'Contact',
-        paragraphs: [
-          'If you have any questions about this Privacy Policy, you can contact us at:',
-        ],
+        paragraphs: ['If you have any questions about this Privacy Policy, you can contact us at:'],
       },
     ],
     contactEmail: 'bethanycurtis.builds@gmail.com',
@@ -103,5 +139,5 @@ export const privacyPolicies = [
 ]
 
 export const privacyPoliciesBySlug = Object.fromEntries(
-  privacyPolicies.map((policy) => [policy.slug, policy])
+  privacyPolicies.map(policy => [policy.slug, policy])
 )

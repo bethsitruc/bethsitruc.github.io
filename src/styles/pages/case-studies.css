@@ -126,6 +126,33 @@
   margin-left: 0.05rem;
 }
 
+.cs-subsection {
+  margin-top: 1.5rem;
+}
+
+.cs-subsection h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.1rem;
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.2rem;
+  color: var(--brand);
+}
+
+.cs-subsection h3::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  margin-left: 0.65rem;
+  background: linear-gradient(90deg, var(--grad-1), var(--grad-2));
+}
+
+.cs-subsection p,
+.cs-subsection ul {
+  margin-top: 0;
+}
+
 @media (max-width: 900px) {
   .case-study-intro {
     grid-template-columns: 1fr;

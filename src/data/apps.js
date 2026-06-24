@@ -9,7 +9,7 @@ export const apps = [
     imageAlt: 'Grounded app icon',
     imageStyle: 'icon',
     summary:
-      'A calm, customizable affirmation app with Apple Intelligence-assisted drafting, favorites, share cards, and widget support.',
+      'A calm, customizable affirmation app with daily encouragement, favorites, share cards, widget support, and optional Apple Intelligence-assisted drafting.',
     bullets: [
       'Daily affirmations with a clean, lightweight home feed',
       'Apple Intelligence flow for tone- and focus-based drafting',
@@ -79,6 +79,7 @@ export const apps = [
                 'Favorites, personal affirmations, and editing flows',
                 'Theme and typography customization with live preview',
                 'Share-card generation and widget support for lightweight daily visibility',
+                'Live on the App Store as a free Health & Fitness app for iPhone and iPad',
               ],
             },
             {
@@ -87,11 +88,11 @@ export const apps = [
                 'The hardest part has been keeping the app emotionally calm while still expanding its feature set. As Apple Intelligence, widgets, personal submissions, theme settings, and sharing tools were added, the challenge became preserving a lightweight, reassuring experience instead of letting the product feel crowded or overly polished.',
               ],
               footer: {
-                title: 'Next Steps',
+                title: 'Current Focus',
                 list: [
+                  'Keep the App Store listing, screenshots, and privacy details aligned with shipped features',
                   'Continue refining AI prompt controls and generated-affirmation review flows',
-                  'Polish onboarding and release-readiness details for launch',
-                  'Prepare App Store assets and final launch messaging',
+                  'Iterate on the daily home feed, widgets, and share-card experience based on real usage',
                 ],
               },
             },
@@ -296,19 +297,19 @@ export const apps = [
   },
   {
     slug: 'flashcards-ios',
-    name: 'Flashcards',
-    subtitle: 'iOS • Education • SwiftData',
+    name: 'Family Flashcards',
+    subtitle: 'iOS • Parent-Managed Learning • SwiftData',
     status: 'In Progress',
     statusTone: 'progress',
     image: '/images/apps/Flashcards/icon.png',
     imageAlt: 'Family Flashcards app icon',
     imageStyle: 'icon',
     summary:
-      'A family-first study app built for kids, with learner profiles, customizable decks, and a tactile, flexible study flow.',
+      'A parent-managed flashcard app for focused early learning practice, with learner profiles, curated decks, custom imports, Kid Mode, and progress tracking.',
     bullets: [
-      'Multiple profiles, avatars, and learner-specific deck filtering',
-      'Custom study flows backed by SwiftData and bundled JSON decks',
-      'Designed to grow from early learning through more advanced practice',
+      'Create separate learner profiles and choose focused practice decks for each child',
+      'Customize deck subsets and study order for alphabet, numbers, shapes, sight words, phonics, and math facts',
+      'Import school lists from typed text, photos, images, or PDFs and hand off a simple Kid Mode experience',
     ],
     ctas: [
       {
@@ -321,14 +322,14 @@ export const apps = [
         variant: 'ghost',
       },
       {
-        label: 'Request Demo',
-        to: '/contact?subject=Flashcards%20App%20Demo%20Request',
+        label: 'Request Preview',
+        to: '/contact?subject=Flashcards%20App%20Preview',
       },
     ],
     detail: {
       slug: 'flashcards-ios',
-      title: 'Flashcards',
-      subtitle: 'SwiftUI • SwiftData • iOS',
+      title: 'Family Flashcards',
+      subtitle: 'SwiftUI • SwiftData • CloudKit • iOS',
       hero: {
         src: '/images/apps/Flashcards/icon.png',
         alt: 'Family Flashcards app icon',
@@ -337,7 +338,8 @@ export const apps = [
       overview: {
         title: 'Overview',
         body: [
-          'I’m building a family-first study app for my kids: playful enough to keep them engaged, structured enough to grow with their learning. The app supports multiple profiles, custom decks, and a tactile study flow designed for letters, numbers, colors, and sight words.',
+          'Family Flashcards is a parent-managed iPhone and iPad app for focused early learning practice. Parents create learner profiles, choose ready-made decks, adjust exactly which cards are included, and hand the device to a child in Kid Mode for a simpler study experience.',
+          'The app is built around smaller, intentional practice sets instead of one giant mixed deck. It supports early learning topics like alphabet recognition, numbers, colors, shapes, sight words, phonics, skip counting, and math facts, with ordered or mixed study options depending on the deck.',
         ],
       },
       blocks: [
@@ -347,15 +349,17 @@ export const apps = [
             {
               title: 'My Role',
               body: [
-                'Solo designer and developer. Handling everything from data modeling to UI design, integrating SwiftUI and SwiftData end-to-end, and shaping features for both kids and parents.',
+                'Solo designer and developer. I designed the parent and kid workflows, built the SwiftUI interface, modeled local learning data in SwiftData, configured CloudKit sync, created the bundled deck library, and prepared the app for TestFlight and App Store submission.',
               ],
             },
             {
               title: 'Tech Stack',
               list: [
                 'Swift, SwiftUI, SwiftData',
-                'JSON-based deck library',
-                'Asset management for images and SF Symbols',
+                'CloudKit-backed persistence',
+                'JSON-based deck library with subset rules',
+                'Vision and document import flows for school lists',
+                'Fastlane snapshot automation for App Store screenshots',
                 'Xcode toolchain',
               ],
             },
@@ -365,26 +369,30 @@ export const apps = [
           type: 'duo',
           items: [
             {
-              title: 'Progress So Far',
+              title: 'What It Supports',
               list: [
-                'Core data model with SwiftData',
-                'Profile system with avatars and color themes',
-                'Installed decks filtered by child profile',
-                'Customizable study mode with front/back card flow',
-                'Bundled JSON deck library',
+                'Separate learner profiles with per-child decks and progress',
+                'Curated preschool, reading, and math decks',
+                'Deck subsets for smaller focused practice groups',
+                'Ordered or mixed study modes',
+                'Kid Mode for a simplified handoff experience',
+                'Custom deck creation from typed cards',
+                'Photo, image, and PDF import for school lists',
+                'Local-first data with optional iCloud sync',
+                'Reset option for clearing learning data',
               ],
             },
             {
-              title: 'Challenges',
+              title: 'Product Direction',
               body: [
-                'Splitting large SwiftUI views into smaller components to improve compile times and satisfy the type checker. Added logging to trace study card flow, which surfaced bugs early.',
+                'The biggest design challenge has been balancing flexibility for parents with simplicity for kids. Parents need enough control to choose the right cards, deck subsets, and study order, while the child-facing mode needs to stay calm, direct, and hard to misconfigure.',
               ],
               footer: {
-                title: 'Next Steps',
+                title: 'Release Readiness',
                 list: [
-                  'Add study statistics and progress tracking',
-                  'Build richer deck library UI with subset selection',
-                  'Create editing tools for parents to customize decks',
+                  'Fastlane App Store screenshots are configured for iPhone and iPad',
+                  'Privacy policy and App Store metadata have been updated for a local-first, parent-managed app',
+                  'TestFlight pass is the next step before App Store submission',
                 ],
               },
             },
@@ -396,12 +404,43 @@ export const apps = [
             {
               title: 'Vision',
               body: [
-                'A kid-friendly flashcards app that grows with learners, from ABCs to math facts, while giving parents flexible tools to adapt content as their children advance.',
+                'A practical, parent-managed learning tool that helps kids practice exactly what they need right now: small sets, clear cards, simple study sessions, and enough flexibility to grow from preschool basics into reading and math facts.',
               ],
               cta: {
-                label: 'Request Demo',
-                href: '/contact?subject=Flashcards%20App%20Demo%20Request',
+                label: 'Request Preview',
+                href: '/contact?subject=Flashcards%20App%20Preview',
               },
+            },
+          ],
+        },
+        {
+          type: 'gallery',
+          variant: 'mobile',
+          items: [
+            {
+              src: '/images/apps/Flashcards/profiles.png',
+              alt: 'Family Flashcards profile selection screen',
+              caption: 'Profiles keep each learner separate',
+            },
+            {
+              src: '/images/apps/Flashcards/library-my-decks.png',
+              alt: 'Family Flashcards library and My Decks view',
+              caption: 'Parents choose and manage focused decks',
+            },
+            {
+              src: '/images/apps/Flashcards/kid-mode.png',
+              alt: 'Family Flashcards Kid Mode setup screen',
+              caption: 'Kid Mode checks that cards are ready before handoff',
+            },
+            {
+              src: '/images/apps/Flashcards/kid-home.png',
+              alt: 'Family Flashcards child home screen',
+              caption: 'A simple study home tailored to the learner',
+            },
+            {
+              src: '/images/apps/Flashcards/study-card.png',
+              alt: 'Family Flashcards study card screen',
+              caption: 'Clear flashcard practice with front and back cards',
             },
           ],
         },
@@ -410,4 +449,4 @@ export const apps = [
   },
 ]
 
-export const appsBySlug = Object.fromEntries(apps.map((app) => [app.slug, app]))
+export const appsBySlug = Object.fromEntries(apps.map(app => [app.slug, app]))

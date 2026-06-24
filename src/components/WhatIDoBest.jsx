@@ -5,7 +5,7 @@ export default function WhatIDoBest() {
     {
       title: 'Building helpful tools',
       blurb:
-        'I design tools that simplify complexity and make life easier — for engineers, learners, and even parents. From SwiftUI apps to GitHub Actions, my work focuses on clarity and usability.',
+        'I design tools that simplify complexity and make life easier — for engineers, learners, and even parents. From SwiftUI apps to AI-enabled data platforms, my work focuses on clarity and usability.',
     },
     {
       title: 'Leading with empathy',
@@ -20,7 +20,7 @@ export default function WhatIDoBest() {
     {
       title: 'Using AI where it helps',
       blurb:
-        'I integrate AI into daily workflows, from GitHub Copilot to Apple Foundation Models. I focus on reducing cognitive load, unlocking deeper thinking, and freeing teams to do their best work.',
+        'I integrate AI into daily workflows, from Codex and GitHub Copilot to Apple Foundation Models. I focus on reducing cognitive load, accelerating delivery, and freeing teams to do their best work.',
     },
   ]
 

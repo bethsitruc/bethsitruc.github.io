@@ -27,21 +27,21 @@ export default function DeepDives() {
             <p>
               From prototype to production, I bring ideas to life with thoughtful tools. Recent
               projects include:
-              <ul>
-                <li>
-                  <strong>Flashcards App</strong> - a personalized study tool for kids built with
-                  SwiftUI and SwiftData
-                </li>
-                <li>
-                  <strong>Affirmation App</strong> - AI-powered daily affirmations with Apple
-                  Foundation Models
-                </li>
-                <li>
-                  <strong>Author Website Rebuild</strong> – modernized a legacy Wix site with React,
-                  Vite, and Markdown publishing
-                </li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                <strong>Family Flashcards</strong> - a parent-managed study app for kids built with
+                SwiftUI, SwiftData, and CloudKit
+              </li>
+              <li>
+                <strong>Grounded: Affirmation App</strong> - a live iOS affirmation app with
+                widgets, share cards, and Apple Intelligence-assisted drafting
+              </li>
+              <li>
+                <strong>Author Website Rebuild</strong> - modernized a legacy Wix site with React,
+                Vite, and Markdown publishing
+              </li>
+            </ul>
           </details>
 
           <details>
@@ -50,9 +50,10 @@ export default function DeepDives() {
               <span>AI in Practice</span>
             </summary>
             <p>
-              I weave AI into everyday engineering work—from GitHub Copilot for refactoring, to
-              Microsoft Copilot for documentation, to ChatGPT for planning. I focus on using AI to
-              accelerate iteration, reduce admin overhead, and open space for strategy.
+              I weave AI into everyday engineering work, from Codex and GitHub Copilot for software
+              delivery to Microsoft Copilot and ChatGPT for planning, documentation, and synthesis.
+              I focus on using AI to accelerate iteration, reduce admin overhead, and improve
+              quality.
             </p>
           </details>
 

@@ -88,6 +88,13 @@ export default function PrivacyPolicyPage() {
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
+                {section.list ? (
+                  <ul>
+                    {section.list.map((entry) => (
+                      <li key={entry}>{entry}</li>
+                    ))}
+                  </ul>
+                ) : null}
                 {section.title === 'Contact' ? (
                   <p>
                     <a href={`mailto:${policy.contactEmail}`}>{policy.contactEmail}</a>

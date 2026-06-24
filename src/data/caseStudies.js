@@ -16,9 +16,9 @@ export const caseStudies = [
 ]
 
 export const caseStudyDetails = {
-  'affirmation-app': {
-    slug: 'affirmation-app',
-    title: 'Affirmation App (iOS)',
+  grounded: {
+    slug: 'grounded',
+    title: 'Grounded: Affirmation App',
     subtitle: 'SwiftUI • Apple Intelligence • Habit Design',
     hero: {
       src: '/images/affirm.png',
@@ -27,7 +27,7 @@ export const caseStudyDetails = {
     overview: {
       title: 'Overview',
       body: [
-        'I’m building a calm, polished iOS app for daily affirmations that supports both quick encouragement and deeper personalization. The experience now includes Apple Intelligence-assisted drafting, favorites, personal affirmations, shareable cards, widget support, and visual customization through themes and typography.',
+        'Grounded is a calm, polished iOS app for daily affirmations that supports both quick encouragement and deeper personalization. The experience includes Apple Intelligence-assisted drafting, favorites, personal affirmations, shareable cards, widget support, and visual customization through themes and typography.',
       ],
     },
     blocks: [
@@ -37,7 +37,7 @@ export const caseStudyDetails = {
           {
             title: 'My Role',
             body: [
-              'Designer and developer. I am shaping the interaction design, visual system, SwiftUI implementation, content model, personalization flow, and the new Apple Intelligence-assisted affirmation experience.',
+              'Designer and developer. I shaped the interaction design, visual system, SwiftUI implementation, content model, personalization flow, and Apple Intelligence-assisted affirmation experience.',
             ],
           },
           {
@@ -63,6 +63,7 @@ export const caseStudyDetails = {
               'Favorites, personal affirmations, and editing flows',
               'Theme and typography customization with live preview',
               'Share-card generation and widget support for lightweight daily visibility',
+              'Live on the App Store as a free Health & Fitness app for iPhone and iPad',
             ],
           },
           {
@@ -71,11 +72,11 @@ export const caseStudyDetails = {
               'The hardest part has been keeping the app emotionally calm while still expanding its feature set. As Apple Intelligence, widgets, personal submissions, theme settings, and sharing tools were added, the challenge became preserving a lightweight, reassuring experience instead of letting the product feel crowded or overly “wellness app” polished.',
             ],
             footer: {
-              title: 'Next Steps',
+              title: 'Current Focus',
               list: [
+                'Keep the App Store listing, screenshots, and privacy details aligned with shipped features',
                 'Continue refining AI prompt controls and generated-affirmation review flows',
-                'Polish onboarding and release-readiness details for launch',
-                'Prepare App Store assets and final launch messaging',
+                'Iterate on the daily home feed, widgets, and share-card experience based on real usage',
               ],
             },
           },
@@ -90,8 +91,8 @@ export const caseStudyDetails = {
               'A quiet, beautifully designed affirmation app that feels personal rather than generic: something people can open for a grounded daily reset, customize to their own taste, and carry into their day through favorites, widgets, and shareable moments.',
             ],
             cta: {
-              label: 'View on GitHub',
-              href: 'https://github.com/bethsitruc/AffirmationApp',
+              label: 'View in App Store',
+              href: 'https://apps.apple.com/us/app/grounded-affirmation-app/id6760471241',
               variant: 'ghost',
               external: true,
             },

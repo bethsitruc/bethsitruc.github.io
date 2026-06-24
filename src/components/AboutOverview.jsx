@@ -8,13 +8,14 @@ export default function AboutOverview() {
           <div className='about-overview-content'>
             <h2 id='about-title'>My Approach</h2>
             <p>
-              I help engineers feel confident with clear onboarding, intuitive tools, and team
-              rhythms that work.
+              I help teams turn complex technical systems into clearer workflows, stronger delivery
+              habits, and tools people can trust.
             </p>
             <p>
               My background spans program management, engineering leadership, curriculum design, and
-              full-stack development. In every role, I focus on how people experience the systems we
-              build.
+              full-stack development, with current work in AI-enabled data observability and
+              platform strategy. In every role, I focus on how people experience the systems we
+              build and operate.
             </p>
             <p>
               I’m at my best simplifying, humanizing, and scaling the systems that support people.

@@ -2,6 +2,7 @@ import React from 'react'
 import ChipLink from './ChipLink'
 
 const roles = [
+  'Associate Director, Tech Data Engineering — UBS',
   'Senior Technical Project Manager — GitHub',
   'Senior Engineering Manager — Kyndryl',
   'Curriculum & Delivery Lead — Maverick Solutions',
@@ -26,15 +27,15 @@ export default function Experience() {
         <article className='experience-card experience-card--work'>
           <h2 id='experience-title'>Work</h2>
           <p className='muted'>
-            A quick look at the teams and roles where I’ve led enablement, engineering, and
-            curriculum programs.
+            A quick look at the teams and roles where I’ve led data engineering, enablement,
+            delivery, and curriculum programs.
           </p>
           <ul className='experience-list'>
             {roles.map(role => (
               <li key={role}>{role}</li>
             ))}
           </ul>
-          <ChipLink href='/assets/BCurtis_Resume_Sept2025.pdf' external>
+          <ChipLink href='/assets/BCurtis_Resume_March2026.pdf' external>
             📄 View my resume
           </ChipLink>
         </article>
