@@ -98,6 +98,7 @@ export const apps = [
             },
           ],
         },
+
         {
           type: 'callout',
           items: [
@@ -206,9 +207,13 @@ export const apps = [
         to: '/apps/friendly-competitions',
       },
       {
+        label: 'Privacy Policy',
+        to: '/privacy-policy/friendly-competitions',
+        variant: 'ghost',
+      },
+      {
         label: 'Request Preview',
         to: '/contact?subject=Friendly%20Competitions%20Preview',
-        variant: 'ghost',
       },
     ],
     detail: {
@@ -274,6 +279,37 @@ export const apps = [
                   'Polish the visual system and capture screenshots for the portfolio page',
                 ],
               },
+            },
+          ],
+        },
+        {
+          type: 'gallery',
+          variant: 'mobile',
+          items: [
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-home.png',
+              alt: 'Friendly Competitions iPhone home screen showing event setup and recent competitions',
+              caption: 'Start and manage competitions from the home screen',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-host-dashboard.png',
+              alt: 'Friendly Competitions iPhone host dashboard showing competition progress',
+              caption: 'Host dashboard keeps entries, judging, and results organized',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-vote.png',
+              alt: 'Friendly Competitions iPhone voting screen for ranking entries',
+              caption: 'Simple voting flow for choosing winners by category',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-standings.png',
+              alt: 'Friendly Competitions iPhone standings screen with ranked results',
+              caption: 'Standings make overall and category results easy to scan',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-share-results.png',
+              alt: 'Friendly Competitions iPhone share results screen',
+              caption: 'Share polished results after a competition wraps',
             },
           ],
         },

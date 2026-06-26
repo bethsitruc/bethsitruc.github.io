@@ -1,5 +1,81 @@
 export const privacyPolicies = [
   {
+    slug: 'friendly-competitions',
+    appName: 'Friendly Competitions',
+    effectiveDate: 'June 26, 2026',
+    dateLabel: 'Last updated',
+    intro:
+      'Friendly Competitions is designed to help you manage lighthearted competitions, votes, and scores on your device. This policy explains what information the app handles and how it is used.',
+    summary:
+      'Friendly Competitions does not collect, sell, or share personal information. Competition entries, participant names, event names, scores, votes, categories, and notes are stored locally on your device unless a future version clearly states otherwise.',
+    sections: [
+      {
+        title: 'Information We Collect',
+        paragraphs: [
+          'Friendly Competitions does not collect, sell, or share personal information.',
+          'The app does not require an account, does not ask for your name, email address, phone number, location, contacts, photos, or other personal information, and does not use advertising or third-party tracking.',
+        ],
+      },
+      {
+        title: 'Competition Data',
+        paragraphs: [
+          "Any competition entries, participant names, event names, scores, votes, categories, or related notes you enter into Friendly Competitions are used only to provide the app's competition scoring features.",
+          'This information is stored locally on your device unless a future version of the app clearly states otherwise. We do not receive or access this information.',
+        ],
+      },
+      {
+        title: 'Analytics, Advertising, and Tracking',
+        paragraphs: [
+          'Friendly Competitions does not use third-party analytics tools, advertising SDKs, or tracking technologies.',
+          'The app does not track you across other apps or websites.',
+        ],
+      },
+      {
+        title: 'Device Permissions',
+        paragraphs: [
+          'Friendly Competitions does not require access to sensitive device permissions such as location, contacts, camera, microphone, photos, or Bluetooth for its core competition scoring features.',
+          'If a future feature requests a device permission, the app will use that permission only for the feature you choose to use.',
+        ],
+      },
+      {
+        title: 'Sharing and Exporting',
+        paragraphs: [
+          "If the app allows you to share or export scores using your device's built-in sharing features, the information you choose to share is handled by the app or service you select. Review the privacy policy of that third-party service before sharing information with it.",
+        ],
+      },
+      {
+        title: "Children's Privacy",
+        paragraphs: [
+          'Friendly Competitions does not knowingly collect personal information from children. Because the app does not collect personal information from users, it does not knowingly collect personal information from children under 13.',
+        ],
+      },
+      {
+        title: 'Data Retention and Deletion',
+        paragraphs: [
+          'Competition data remains on your device until you delete it in the app or remove the app from your device.',
+          "Deleting the app may delete locally stored app data from your device, subject to your device's backup and restore settings.",
+        ],
+      },
+      {
+        title: 'Security',
+        paragraphs: [
+          'Friendly Competitions relies on the security features of your device and operating system to protect locally stored app data. No method of storage is completely secure, so avoid entering sensitive personal information that is not needed for competition scoring.',
+        ],
+      },
+      {
+        title: 'Changes to This Policy',
+        paragraphs: [
+          'We may update this Privacy Policy from time to time. If we make changes, we will update the "Last updated" date above.',
+        ],
+      },
+      {
+        title: 'Contact',
+        paragraphs: ['If you have questions about this Privacy Policy, contact us at:'],
+      },
+    ],
+    contactEmail: 'bethanycurtis.builds@gmail.com',
+  },
+  {
     slug: 'grounded',
     appName: 'Grounded: Affirmation App',
     effectiveDate: 'June 2026',
