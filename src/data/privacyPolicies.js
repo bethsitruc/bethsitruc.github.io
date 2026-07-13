@@ -1,5 +1,96 @@
 export const privacyPolicies = [
   {
+    slug: 'until-friday',
+    appName: 'Until Friday',
+    effectiveDate: 'July 13, 2026',
+    dateLabel: 'Last updated',
+    intro:
+      'Until Friday is designed to help you track flexible spending buckets, refill timing, and household budget activity on your device. This policy explains what information the app handles and how it is used.',
+    summary:
+      'Until Friday does not collect, sell, or share personal information with the developer. Budget buckets, spend entries, household sharing details, notification preferences, and widget snapshot data are used only to provide the app’s budgeting features.',
+    sections: [
+      {
+        title: 'Information We Collect',
+        paragraphs: [
+          'The developer does not collect, receive, sell, rent, or share personal information from Until Friday.',
+          'The app does not require a developer-operated account, does not use advertising, and does not use third-party tracking or analytics SDKs.',
+        ],
+      },
+      {
+        title: 'Budget Data',
+        paragraphs: [
+          'Any budget bucket names, budget amounts, refill schedules, rollover settings, spend entries, spending notes, household display names, and related budget details you enter into Until Friday are used only to provide the app’s budgeting features.',
+          'This information is stored locally on your device unless you choose to use iCloud sharing or another system feature that moves data through Apple services. The developer does not receive or access this information.',
+        ],
+      },
+      {
+        title: 'iCloud and Family Sharing',
+        paragraphs: [
+          'Until Friday can use Apple iCloud and CloudKit when you choose to share a household budget with another Apple ID. Shared budget records may include budget buckets, spend entries, household names, participant display names, and related sync metadata needed to keep the shared budget working.',
+          'The developer does not operate iCloud or CloudKit and does not receive or access your iCloud-shared Until Friday data. iCloud data is handled by Apple according to Apple’s privacy practices and your iCloud settings.',
+        ],
+      },
+      {
+        title: 'Notifications and Widgets',
+        paragraphs: [
+          'If you enable low-balance alerts, Until Friday uses your device’s notification system to schedule alerts for buckets that are at or below the app’s configured threshold. The developer does not receive your notification data.',
+          'Until Friday may save a small local widget snapshot, such as a bucket name, remaining amount, refill text, and over-budget status, so the widget can display current budget information. This widget data remains on your device unless your device settings or Apple services handle it otherwise.',
+        ],
+      },
+      {
+        title: 'Analytics, Advertising, and Tracking',
+        paragraphs: [
+          'Until Friday does not use third-party analytics tools, advertising SDKs, or tracking technologies.',
+          'The app does not track you across other apps or websites.',
+        ],
+      },
+      {
+        title: 'Device Permissions',
+        paragraphs: [
+          'Until Friday may request notification permission if you choose to enable low-balance alerts. Notification permission is used only to provide those alerts.',
+          'Until Friday does not require access to sensitive device permissions such as location, contacts, camera, microphone, photos, or Bluetooth for its core budgeting features.',
+        ],
+      },
+      {
+        title: 'Sharing and Exporting',
+        paragraphs: [
+          'If the app allows you to share budget information using your device’s built-in sharing features, the information you choose to share is handled by the app or service you select. Review the privacy policy of that third-party service before sharing information with it.',
+        ],
+      },
+      {
+        title: 'Children’s Privacy',
+        paragraphs: [
+          'Until Friday does not knowingly collect personal information from children. Because the developer does not collect personal information from users, the developer does not knowingly collect personal information from children under 13.',
+        ],
+      },
+      {
+        title: 'Data Retention and Deletion',
+        paragraphs: [
+          'Budget data remains on your device until you delete it in the app or remove the app from your device.',
+          'If iCloud sharing is enabled, deletions may sync to other devices or participants connected to the same shared budget, subject to Apple’s iCloud behavior and your device settings.',
+          'Deleting the app may delete locally stored app data from your device, subject to your device’s backup and restore settings.',
+        ],
+      },
+      {
+        title: 'Security',
+        paragraphs: [
+          'Until Friday relies on the security features of your device, operating system, and Apple iCloud services to protect locally stored and iCloud-shared app data. No method of storage or transmission is completely secure, so avoid entering sensitive personal information that is not needed for budgeting.',
+        ],
+      },
+      {
+        title: 'Changes to This Policy',
+        paragraphs: [
+          'We may update this Privacy Policy from time to time. If we make changes, we will update the "Last updated" date above.',
+        ],
+      },
+      {
+        title: 'Contact',
+        paragraphs: ['If you have questions about this Privacy Policy, contact us at:'],
+      },
+    ],
+    contactEmail: 'bethanycurtis.builds@gmail.com',
+  },
+  {
     slug: 'friendly-competitions',
     appName: 'Friendly Competitions',
     effectiveDate: 'June 26, 2026',

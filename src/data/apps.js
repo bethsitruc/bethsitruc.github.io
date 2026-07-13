@@ -186,157 +186,11 @@ export const apps = [
     },
   },
   {
-    slug: 'friendly-competitions',
-    name: 'Friendly Competitions',
-    subtitle: 'iOS • Offline-first • Event Scoring',
-    status: 'In Progress',
-    statusTone: 'progress',
-    image: '/images/apps/FriendlyCompetitions/icon.png',
-    imageAlt: 'Friendly Competitions app icon',
-    imageStyle: 'icon',
-    summary:
-      'An offline-first iOS app for hosting lighthearted competitions, collecting votes, and settling the friendly debate with clear standings.',
-    bullets: [
-      'Create events with unlimited entries, default or custom categories, and configurable medal points',
-      'Supports pass-the-phone judging and invite-code judging on the same device',
-      'Shows participation, standings, ties, and shareable results in one polished flow',
-    ],
-    ctas: [
-      {
-        label: 'View Details',
-        to: '/apps/friendly-competitions',
-      },
-      {
-        label: 'Privacy Policy',
-        to: '/privacy-policy/friendly-competitions',
-        variant: 'ghost',
-      },
-      {
-        label: 'Request Preview',
-        to: '/contact?subject=Friendly%20Competitions%20Preview',
-      },
-    ],
-    detail: {
-      slug: 'friendly-competitions',
-      title: 'Friendly Competitions',
-      subtitle: 'SwiftUI • SwiftData • Offline-first Scoring',
-      hero: {
-        src: '/images/apps/FriendlyCompetitions/icon.png',
-        alt: 'Friendly Competitions app icon',
-        style: 'icon',
-      },
-      overview: {
-        title: 'Overview',
-        body: [
-          'Friendly Competitions is an offline-first iOS app for hosting lighthearted contests and collecting everyone’s favorites without turning the experience into spreadsheet work. It helps a host set up an event, define entries and categories, collect votes, and view clear standings on the same device.',
-        ],
-      },
-      blocks: [
-        {
-          type: 'calloutRow',
-          items: [
-            {
-              title: 'My Role',
-              body: [
-                'Designer and developer. I am shaping the event flow, SwiftUI interface, scoring model, local persistence, and the host and judge experiences for a product that needs to feel simple under real-world pressure.',
-              ],
-            },
-            {
-              title: 'Tech Stack',
-              list: [
-                'Swift, SwiftUI, SwiftData',
-                'Offline-first local persistence',
-                'Scoring and tie-resolution logic',
-                'Share and export helpers for recaps and results',
-                'Xcode toolchain',
-              ],
-            },
-          ],
-        },
-        {
-          type: 'duo',
-          items: [
-            {
-              title: 'Progress So Far',
-              list: [
-                'Competition creation with unlimited entries',
-                'Default categories plus custom category support',
-                'Configurable Gold, Silver, and Bronze points per category',
-                'Pass-the-phone and invite-code judging modes on one device',
-                'Participation tracking, standings, category winners, overall winners, and tie handling',
-              ],
-            },
-            {
-              title: 'Challenges',
-              body: [
-                'The product has to stay playful and fast while still handling real scoring complexity. The hard part is making setup, voting, lock/finalize states, and result interpretation feel obvious for casual users without oversimplifying the underlying rules.',
-              ],
-              footer: {
-                title: 'Next Steps',
-                list: [
-                  'Refine the host dashboard and judge handoff flow',
-                  'Add stronger export and recap options for finished events',
-                  'Polish the visual system and capture screenshots for the portfolio page',
-                ],
-              },
-            },
-          ],
-        },
-        {
-          type: 'gallery',
-          variant: 'mobile',
-          items: [
-            {
-              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-home.png',
-              alt: 'Friendly Competitions iPhone home screen showing event setup and recent competitions',
-              caption: 'Start and manage competitions from the home screen',
-            },
-            {
-              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-host-dashboard.png',
-              alt: 'Friendly Competitions iPhone host dashboard showing competition progress',
-              caption: 'Host dashboard keeps entries, judging, and results organized',
-            },
-            {
-              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-vote.png',
-              alt: 'Friendly Competitions iPhone voting screen for ranking entries',
-              caption: 'Simple voting flow for choosing winners by category',
-            },
-            {
-              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-standings.png',
-              alt: 'Friendly Competitions iPhone standings screen with ranked results',
-              caption: 'Standings make overall and category results easy to scan',
-            },
-            {
-              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-share-results.png',
-              alt: 'Friendly Competitions iPhone share results screen',
-              caption: 'Share polished results after a competition wraps',
-            },
-          ],
-        },
-        {
-          type: 'callout',
-          items: [
-            {
-              title: 'Vision',
-              body: [
-                'A joyful utility for bake-offs, classroom contests, family voting, or team events: structured enough to keep scoring fair, but light enough that the event still feels social and fun.',
-              ],
-              cta: {
-                label: 'Request Preview',
-                href: '/contact?subject=Friendly%20Competitions%20Preview',
-              },
-            },
-          ],
-        },
-      ],
-    },
-  },
-  {
     slug: 'flashcards-ios',
     name: 'Family Flashcards',
     subtitle: 'iOS • Parent-Managed Learning • SwiftData',
-    status: 'In Progress',
-    statusTone: 'progress',
+    status: 'Prerelease',
+    statusTone: 'launching',
     image: '/images/apps/Flashcards/icon.png',
     imageAlt: 'Family Flashcards app icon',
     imageStyle: 'icon',
@@ -477,6 +331,270 @@ export const apps = [
               src: '/images/apps/Flashcards/study-card.png',
               alt: 'Family Flashcards study card screen',
               caption: 'Clear flashcard practice with front and back cards',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    slug: 'until-friday',
+    name: 'Until Friday',
+    subtitle: 'iOS • Budget Buckets • Family Sharing',
+    status: 'In Progress',
+    statusTone: 'progress',
+    image: '/images/apps/UntilFriday/icon.png',
+    imageAlt: 'Until Friday app icon',
+    imageStyle: 'icon',
+    summary:
+      'A SwiftUI budgeting app for tracking flexible spending buckets until the next refill, with spend logging, trends, widgets, low-balance alerts, and optional iCloud family sharing.',
+    bullets: [
+      'Create budget buckets with weekly, biweekly, monthly, or custom refill cadences',
+      'Log spending, edit entries, undo deletes, and see what is left until the next refill',
+      'Track trends, surface widget snapshots, and share a household budget through iCloud',
+    ],
+    ctas: [
+      {
+        label: 'View Details',
+        to: '/apps/until-friday',
+      },
+      {
+        label: 'Privacy Policy',
+        to: '/privacy-policy/until-friday',
+        variant: 'ghost',
+      },
+      {
+        label: 'Request Preview',
+        to: '/contact?subject=Until%20Friday%20Preview',
+      },
+    ],
+    detail: {
+      slug: 'until-friday',
+      title: 'Until Friday',
+      subtitle: 'SwiftUI • SwiftData • CloudKit • Budgeting',
+      hero: {
+        src: '/images/apps/UntilFriday/icon.png',
+        alt: 'Until Friday app icon',
+        style: 'icon',
+      },
+      overview: {
+        title: 'Overview',
+        body: [
+          'Until Friday is a practical iOS budgeting app built around spending buckets that refill on a schedule. Instead of treating budgets as static monthly categories, the app focuses on the short-term question that comes up in real life: how much is left until the next refill?',
+          'The app supports custom buckets, refill cadences, spend history, trend comparisons, low-balance alerts, widget snapshots, and an iCloud-backed family sharing flow for household budgets.',
+        ],
+      },
+      blocks: [
+        {
+          type: 'calloutRow',
+          items: [
+            {
+              title: 'My Role',
+              body: [
+                'Solo designer and developer. I am defining the product model, SwiftUI interface, SwiftData persistence, CloudKit sharing flow, notification behavior, widget snapshot logic, and the app icon and visual direction.',
+              ],
+            },
+            {
+              title: 'Tech Stack',
+              list: [
+                'Swift, SwiftUI, SwiftData',
+                'CloudKit sharing for household budget records',
+                'UserNotifications for low-balance alerts',
+                'Widget snapshot data for lightweight home-screen visibility',
+                'Xcode toolchain',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'duo',
+          items: [
+            {
+              title: 'What It Supports',
+              list: [
+                'Budget buckets with weekly, biweekly, monthly, and custom refill schedules',
+                'Optional rollover for bucket balances between refill periods',
+                'Spend logging with edit, delete, and undo flows',
+                'Per-bucket detail views showing remaining amount, refill timing, and period spending',
+                'Trend comparisons across refills and months',
+                'Low-balance alerts for buckets at or below a configured threshold',
+                'iCloud family sharing so another Apple ID can join the same household budget records',
+              ],
+            },
+            {
+              title: 'Product Direction',
+              body: [
+                'The main design challenge is making budgeting feel immediate instead of administrative. The app keeps the interface centered on remaining money, refill timing, and simple logging, while still supporting harder behind-the-scenes needs like shared records, recurring budget periods, and trend comparison.',
+              ],
+              footer: {
+                title: 'Current Focus',
+                list: [
+                  'Polish the bucket setup and logging flow for quick daily use',
+                  'Validate family sharing and CloudKit sync behavior across devices',
+                  'Refine widget, notification, and trend surfaces before broader testing',
+                ],
+              },
+            },
+          ],
+        },
+        {
+          type: 'callout',
+          items: [
+            {
+              title: 'Vision',
+              body: [
+                'A low-friction budget companion for people who think in payday cycles, grocery runs, dinners out, and household spending limits: clear enough to open in seconds, flexible enough to match real refill rhythms, and shareable when more than one person is spending from the same buckets.',
+              ],
+              cta: {
+                label: 'Request Preview',
+                href: '/contact?subject=Until%20Friday%20Preview',
+              },
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    slug: 'friendly-competitions',
+    name: 'Friendly Competitions',
+    subtitle: 'iOS • Offline-first • Event Scoring',
+    status: 'In Progress',
+    statusTone: 'progress',
+    image: '/images/apps/FriendlyCompetitions/icon.png',
+    imageAlt: 'Friendly Competitions app icon',
+    imageStyle: 'icon',
+    summary:
+      'An offline-first iOS app for hosting lighthearted competitions, collecting votes, and settling the friendly debate with clear standings.',
+    bullets: [
+      'Create events with unlimited entries, default or custom categories, and configurable medal points',
+      'Supports pass-the-phone judging and invite-code judging on the same device',
+      'Shows participation, standings, ties, and shareable results in one polished flow',
+    ],
+    ctas: [
+      {
+        label: 'View Details',
+        to: '/apps/friendly-competitions',
+      },
+      {
+        label: 'Privacy Policy',
+        to: '/privacy-policy/friendly-competitions',
+        variant: 'ghost',
+      },
+      {
+        label: 'Request Preview',
+        to: '/contact?subject=Friendly%20Competitions%20Preview',
+      },
+    ],
+    detail: {
+      slug: 'friendly-competitions',
+      title: 'Friendly Competitions',
+      subtitle: 'SwiftUI • SwiftData • Offline-first Scoring',
+      hero: {
+        src: '/images/apps/FriendlyCompetitions/icon.png',
+        alt: 'Friendly Competitions app icon',
+        style: 'icon',
+      },
+      overview: {
+        title: 'Overview',
+        body: [
+          'Friendly Competitions is an offline-first iOS app for hosting lighthearted contests and collecting everyone’s favorites without turning the experience into spreadsheet work. It helps a host set up an event, define entries and categories, collect votes, and view clear standings on the same device.',
+        ],
+      },
+      blocks: [
+        {
+          type: 'calloutRow',
+          items: [
+            {
+              title: 'My Role',
+              body: [
+                'Designer and developer. I am shaping the event flow, SwiftUI interface, scoring model, local persistence, and the host and judge experiences for a product that needs to feel simple under real-world pressure.',
+              ],
+            },
+            {
+              title: 'Tech Stack',
+              list: [
+                'Swift, SwiftUI, SwiftData',
+                'Offline-first local persistence',
+                'Scoring and tie-resolution logic',
+                'Share and export helpers for recaps and results',
+                'Xcode toolchain',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'duo',
+          items: [
+            {
+              title: 'Progress So Far',
+              list: [
+                'Competition creation with unlimited entries',
+                'Default categories plus custom category support',
+                'Configurable Gold, Silver, and Bronze points per category',
+                'Pass-the-phone and invite-code judging modes on one device',
+                'Participation tracking, standings, category winners, overall winners, and tie handling',
+              ],
+            },
+            {
+              title: 'Challenges',
+              body: [
+                'The product has to stay playful and fast while still handling real scoring complexity. The hard part is making setup, voting, lock/finalize states, and result interpretation feel obvious for casual users without oversimplifying the underlying rules.',
+              ],
+              footer: {
+                title: 'Next Steps',
+                list: [
+                  'Refine the host dashboard and judge handoff flow',
+                  'Add stronger export and recap options for finished events',
+                  'Polish the visual system and capture screenshots for the portfolio page',
+                ],
+              },
+            },
+          ],
+        },
+        {
+          type: 'gallery',
+          variant: 'mobile',
+          items: [
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-home.png',
+              alt: 'Friendly Competitions iPhone home screen showing event setup and recent competitions',
+              caption: 'Start and manage competitions from the home screen',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-host-dashboard.png',
+              alt: 'Friendly Competitions iPhone host dashboard showing competition progress',
+              caption: 'Host dashboard keeps entries, judging, and results organized',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-vote.png',
+              alt: 'Friendly Competitions iPhone voting screen for ranking entries',
+              caption: 'Simple voting flow for choosing winners by category',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-standings.png',
+              alt: 'Friendly Competitions iPhone standings screen with ranked results',
+              caption: 'Standings make overall and category results easy to scan',
+            },
+            {
+              src: '/images/apps/FriendlyCompetitions/screenshots/iphone-share-results.png',
+              alt: 'Friendly Competitions iPhone share results screen',
+              caption: 'Share polished results after a competition wraps',
+            },
+          ],
+        },
+        {
+          type: 'callout',
+          items: [
+            {
+              title: 'Vision',
+              body: [
+                'A joyful utility for bake-offs, classroom contests, family voting, or team events: structured enough to keep scoring fair, but light enough that the event still feels social and fun.',
+              ],
+              cta: {
+                label: 'Request Preview',
+                href: '/contact?subject=Friendly%20Competitions%20Preview',
+              },
             },
           ],
         },
