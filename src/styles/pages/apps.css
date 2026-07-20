@@ -21,6 +21,77 @@
   gap: 1.75rem;
 }
 
+.apps-carousel {
+  display: grid;
+  gap: 1rem;
+  position: relative;
+}
+
+.apps-carousel__viewport {
+  margin-inline: -0.75rem;
+  overflow: hidden;
+  padding: 0.25rem 0.75rem 0.9rem;
+}
+
+.apps-carousel__track {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+
+.apps-carousel__slide {
+  flex: 0 0 min(84%, 920px);
+  min-width: 0;
+  padding-inline: 0.65rem;
+}
+
+.app-card--carousel {
+  min-height: 360px;
+  height: 100%;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.app-card--carousel:hover,
+.app-card--carousel:focus-within {
+  box-shadow: 0 22px 44px rgba(31, 41, 51, 0.16);
+  transform: translateY(-2px);
+}
+
+.apps-carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding-top: 0.1rem;
+}
+
+.apps-carousel__dots {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.apps-carousel__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(31, 41, 51, 0.22);
+  cursor: pointer;
+  padding: 0;
+}
+
+.apps-carousel__dot:hover,
+.apps-carousel__dot:focus-visible,
+.apps-carousel__dot--active {
+  background: var(--highlight);
+}
+
+.apps-carousel__dot--active {
+  width: 1.6rem;
+}
+
 .app-card {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(220px, 300px);
@@ -162,6 +233,16 @@
 }
 
 @media (max-width: 700px) {
+  .apps-carousel__viewport {
+    margin-inline: -0.35rem;
+    padding-inline: 0.35rem;
+  }
+
+  .apps-carousel__slide {
+    flex-basis: 100%;
+    padding-inline: 0.35rem;
+  }
+
   .app-card {
     padding: 1.35rem;
   }

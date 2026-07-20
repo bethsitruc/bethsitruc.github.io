@@ -7,7 +7,13 @@ const routes = [
   },
   {
     path: '/apps',
-    text: ['Apps', 'Grounded: Affirmation App', 'Family Flashcards', 'Friendly Competitions'],
+    text: [
+      'Apps',
+      'Grounded: Affirmation App',
+      'Flashcards for Families',
+      'Until Friday',
+      'Friendly Competitions',
+    ],
   },
   {
     path: '/apps/grounded',
@@ -15,11 +21,11 @@ const routes = [
   },
   {
     path: '/apps/flashcards-ios',
-    text: ['Family Flashcards', 'Kid Mode', 'Release Readiness'],
+    text: ['Flashcards for Families', 'Kid Mode', 'Release Readiness'],
   },
   {
     path: '/privacy-policy',
-    text: ['Privacy Policies', 'Grounded: Affirmation App', 'Family Flashcards'],
+    text: ['Privacy Policies', 'Grounded: Affirmation App', 'Flashcards for Families'],
   },
   {
     path: '/privacy-policy/grounded',
@@ -27,7 +33,7 @@ const routes = [
   },
   {
     path: '/privacy-policy/flashcards-ios',
-    text: ['Privacy Policy', 'Family Flashcards', 'Children’s Privacy'],
+    text: ['Privacy Policy', 'Flashcards for Families', 'Children’s Privacy'],
   },
 ]
 
@@ -48,7 +54,7 @@ test.describe('site smoke', () => {
   test('app cards expose expected app and privacy destinations', async ({ page }) => {
     await page.goto('/apps')
 
-    await expect(page.getByRole('link', { name: 'View in App Store' })).toHaveAttribute(
+    await expect(page.getByRole('link', { name: 'View in App Store' }).first()).toHaveAttribute(
       'href',
       'https://apps.apple.com/us/app/grounded-affirmation-app/id6760471241'
     )
@@ -60,5 +66,22 @@ test.describe('site smoke', () => {
       'href',
       '/privacy-policy/flashcards-ios'
     )
+    await expect(page.getByRole('link', { name: 'View in App Store' }).nth(1)).toHaveAttribute(
+      'href',
+      'https://apps.apple.com/us/app/flashcards-for-families/id6766307410'
+    )
+  })
+
+  test('homepage app carousel exposes dot navigation', async ({ page }) => {
+    await page.goto('/')
+
+    await expect(page.locator('.apps-carousel')).toBeVisible()
+    await expect(
+      page.getByRole('button', { name: 'View Grounded: Affirmation App' })
+    ).toHaveAttribute('aria-current', 'true')
+    await page.getByRole('button', { name: 'View Flashcards for Families' }).click()
+    await expect(
+      page.getByRole('button', { name: 'View Flashcards for Families' })
+    ).toHaveAttribute('aria-current', 'true')
   })
 })

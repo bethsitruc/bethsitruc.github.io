@@ -26,6 +26,7 @@ function Home() {
           ctaLabel='View all apps'
           ctaTo='/apps'
           sectionId='apps'
+          variant='carousel'
         />
         <FeaturedCaseStudy />
       </main>
