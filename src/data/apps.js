@@ -187,12 +187,12 @@ export const apps = [
   },
   {
     slug: 'flashcards-ios',
-    name: 'Family Flashcards',
+    name: 'Flashcards for Families',
     subtitle: 'iOS • Parent-Managed Learning • SwiftData',
-    status: 'Prerelease',
-    statusTone: 'launching',
+    status: 'Now Available',
+    statusTone: 'released',
     image: '/images/apps/Flashcards/icon.png',
-    imageAlt: 'Family Flashcards app icon',
+    imageAlt: 'Flashcards for Families app icon',
     imageStyle: 'icon',
     summary:
       'A parent-managed flashcard app for focused early learning practice, with learner profiles, curated decks, custom imports, Kid Mode, and progress tracking.',
@@ -212,23 +212,24 @@ export const apps = [
         variant: 'ghost',
       },
       {
-        label: 'Request Preview',
-        to: '/contact?subject=Flashcards%20App%20Preview',
+        label: 'View in App Store',
+        href: 'https://apps.apple.com/us/app/flashcards-for-families/id6766307410',
+        external: true,
       },
     ],
     detail: {
       slug: 'flashcards-ios',
-      title: 'Family Flashcards',
+      title: 'Flashcards for Families',
       subtitle: 'SwiftUI • SwiftData • CloudKit • iOS',
       hero: {
         src: '/images/apps/Flashcards/icon.png',
-        alt: 'Family Flashcards app icon',
+        alt: 'Flashcards for Families app icon',
         style: 'icon',
       },
       overview: {
         title: 'Overview',
         body: [
-          'Family Flashcards is a parent-managed iPhone and iPad app for focused early learning practice. Parents create learner profiles, choose ready-made decks, adjust exactly which cards are included, and hand the device to a child in Kid Mode for a simpler study experience.',
+          'Flashcards for Families is a parent-managed iPhone and iPad app for focused early learning practice. Parents create learner profiles, choose ready-made decks, adjust exactly which cards are included, and hand the device to a child in Kid Mode for a simpler study experience.',
           'The app is built around smaller, intentional practice sets instead of one giant mixed deck. It supports early learning topics like alphabet recognition, numbers, colors, shapes, sight words, phonics, skip counting, and math facts, with ordered or mixed study options depending on the deck.',
         ],
       },
@@ -239,7 +240,7 @@ export const apps = [
             {
               title: 'My Role',
               body: [
-                'Solo designer and developer. I designed the parent and kid workflows, built the SwiftUI interface, modeled local learning data in SwiftData, configured CloudKit sync, created the bundled deck library, and prepared the app for TestFlight and App Store submission.',
+                'Solo designer and developer. I designed the parent and kid workflows, built the SwiftUI interface, modeled local learning data in SwiftData, configured CloudKit sync, created the bundled deck library, and shipped the app to the App Store.',
               ],
             },
             {
@@ -280,9 +281,9 @@ export const apps = [
               footer: {
                 title: 'Release Readiness',
                 list: [
-                  'Fastlane App Store screenshots are configured for iPhone and iPad',
-                  'Privacy policy and App Store metadata have been updated for a local-first, parent-managed app',
-                  'TestFlight pass is the next step before App Store submission',
+                  'Live on the App Store as a free Education app for iPhone and iPad',
+                  'Privacy policy and App Store metadata are aligned with shipped local-first, parent-managed features',
+                  'Current focus is post-release polish, screenshots, and ongoing deck improvements',
                 ],
               },
             },
@@ -297,8 +298,10 @@ export const apps = [
                 'A practical, parent-managed learning tool that helps kids practice exactly what they need right now: small sets, clear cards, simple study sessions, and enough flexibility to grow from preschool basics into reading and math facts.',
               ],
               cta: {
-                label: 'Request Preview',
-                href: '/contact?subject=Flashcards%20App%20Preview',
+                label: 'View in App Store',
+                href: 'https://apps.apple.com/us/app/flashcards-for-families/id6766307410',
+                variant: 'ghost',
+                external: true,
               },
             },
           ],
@@ -309,27 +312,27 @@ export const apps = [
           items: [
             {
               src: '/images/apps/Flashcards/profiles.png',
-              alt: 'Family Flashcards profile selection screen',
+              alt: 'Flashcards for Families profile selection screen',
               caption: 'Profiles keep each learner separate',
             },
             {
               src: '/images/apps/Flashcards/library-my-decks.png',
-              alt: 'Family Flashcards library and My Decks view',
+              alt: 'Flashcards for Families library and My Decks view',
               caption: 'Parents choose and manage focused decks',
             },
             {
               src: '/images/apps/Flashcards/kid-mode.png',
-              alt: 'Family Flashcards Kid Mode setup screen',
+              alt: 'Flashcards for Families Kid Mode setup screen',
               caption: 'Kid Mode checks that cards are ready before handoff',
             },
             {
               src: '/images/apps/Flashcards/kid-home.png',
-              alt: 'Family Flashcards child home screen',
+              alt: 'Flashcards for Families child home screen',
               caption: 'A simple study home tailored to the learner',
             },
             {
               src: '/images/apps/Flashcards/study-card.png',
-              alt: 'Family Flashcards study card screen',
+              alt: 'Flashcards for Families study card screen',
               caption: 'Clear flashcard practice with front and back cards',
             },
           ],

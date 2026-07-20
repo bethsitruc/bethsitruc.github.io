@@ -35,7 +35,7 @@ export default function Experience() {
               <li key={role}>{role}</li>
             ))}
           </ul>
-          <ChipLink href='/assets/BCurtis_Resume_March2026.pdf' external>
+          <ChipLink href='/assets/BCurtis_Resume_July2026.pdf' external>
             📄 View my resume
           </ChipLink>
         </article>

@@ -169,11 +169,11 @@ export const caseStudyDetails = {
   },
   'flashcards-ios': {
     slug: 'flashcards-ios',
-    title: 'Flashcards iOS App',
+    title: 'Flashcards for Families iOS App',
     subtitle: 'SwiftUI • SwiftData • iOS',
     hero: {
       src: '/images/flashcards.png',
-      alt: 'Flashcards iOS app screens',
+      alt: 'Flashcards for Families iOS app screens',
     },
     overview: {
       title: 'Overview',
@@ -240,8 +240,8 @@ export const caseStudyDetails = {
               'A kid-friendly flashcards app that grows with learners — from ABCs to math facts — while giving parents flexible tools to adapt content as their children advance.',
             ],
             cta: {
-              label: 'Request Demo',
-              href: '/contact?subject=Flashcards%20App%20Demo%20Request',
+              label: 'View in App Store',
+              href: 'https://apps.apple.com/us/app/flashcards-for-families/id6766307410',
             },
           },
         ],

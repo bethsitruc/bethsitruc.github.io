@@ -30,8 +30,8 @@ export default function DeepDives() {
             </p>
             <ul>
               <li>
-                <strong>Family Flashcards</strong> - a parent-managed study app for kids built with
-                SwiftUI, SwiftData, and CloudKit
+                <strong>Flashcards for Families</strong> - a parent-managed study app for kids built
+                with SwiftUI, SwiftData, and CloudKit
               </li>
               <li>
                 <strong>Grounded: Affirmation App</strong> - a live iOS affirmation app with

@@ -169,7 +169,7 @@ export const privacyPolicies = [
   {
     slug: 'grounded',
     appName: 'Grounded: Affirmation App',
-    effectiveDate: 'June 2026',
+    effectiveDate: 'July 2026',
     intro: 'Grounded: Affirmation App ("we", "our", or "us") respects your privacy.',
     summary:
       'The developer does not collect personal data from Grounded. The app stores affirmations, favorites, and appearance preferences on your device, with optional iCloud sync and Apple Intelligence used only when you choose to generate an affirmation.',
@@ -225,16 +225,16 @@ export const privacyPolicies = [
   },
   {
     slug: 'flashcards-ios',
-    appName: 'Family Flashcards',
-    effectiveDate: 'June 2026',
-    intro: 'Family Flashcards ("we", "our", or "us") respects your privacy.',
+    appName: 'Flashcards for Families',
+    effectiveDate: 'July 2026',
+    intro: 'Flashcards for Families ("we", "our", or "us") respects your privacy.',
     summary:
-      'Family Flashcards is a parent-managed learning app that stores study data locally on your device and can optionally sync that data through your personal iCloud account.',
+      'Flashcards for Families is a parent-managed learning app that stores study data locally on your device and can optionally sync that data through your personal iCloud account.',
     sections: [
       {
         title: 'Data the Developer Collects',
         paragraphs: [
-          'The developer does not collect, receive, sell, rent, or share personal data from Family Flashcards.',
+          'The developer does not collect, receive, sell, rent, or share personal data from Flashcards for Families.',
         ],
         list: [
           'advertising',
@@ -248,7 +248,7 @@ export const privacyPolicies = [
       },
       {
         title: 'Information Stored in the App',
-        paragraphs: ['Family Flashcards may store the following information on your device:'],
+        paragraphs: ['Flashcards for Families may store the following information on your device:'],
         list: [
           'learner profiles',
           'selected and installed decks',
@@ -265,28 +265,28 @@ export const privacyPolicies = [
       {
         title: 'iCloud Sync',
         paragraphs: [
-          'If iCloud is enabled for Family Flashcards, app data may sync through Apple’s iCloud and CloudKit service to other devices signed in to the same Apple ID.',
-          'The developer does not operate the iCloud service and does not receive or access your iCloud-synced Family Flashcards data. iCloud data is handled by Apple according to Apple’s privacy practices and your iCloud settings.',
+          'If iCloud is enabled for Flashcards for Families, app data may sync through Apple’s iCloud and CloudKit service to other devices signed in to the same Apple ID.',
+          'The developer does not operate the iCloud service and does not receive or access your iCloud-synced Flashcards for Families data. iCloud data is handled by Apple according to Apple’s privacy practices and your iCloud settings.',
         ],
       },
       {
         title: 'Camera, Photos, Images, and PDFs',
         paragraphs: [
-          'Family Flashcards can help parents create custom decks from school lists, worksheets, photos, images, or PDFs.',
+          'Flashcards for Families can help parents create custom decks from school lists, worksheets, photos, images, or PDFs.',
           'If you choose to use these features, the app may request access to the camera, selected photos, or selected files. These items are used to create flashcards in the app. The developer does not receive copies of your photos, images, PDFs, imported text, or custom flashcards.',
         ],
       },
       {
         title: 'Children’s Privacy',
         paragraphs: [
-          'Family Flashcards is intended to be configured by parents or guardians and then used by children for supervised study.',
-          'The developer does not knowingly collect personal information from children through Family Flashcards.',
+          'Flashcards for Families is intended to be configured by parents or guardians and then used by children for supervised study.',
+          'The developer does not knowingly collect personal information from children through Flashcards for Families.',
         ],
       },
       {
         title: 'Deleting Data',
         paragraphs: [
-          'You can delete learner profiles and decks inside the app. Family Flashcards also includes a reset option that deletes local app data, including learner profiles, custom decks, installed decks, and progress.',
+          'You can delete learner profiles and decks inside the app. Flashcards for Families also includes a reset option that deletes local app data, including learner profiles, custom decks, installed decks, and progress.',
           'If iCloud sync is enabled, deletions may sync to other devices signed in to the same iCloud account.',
         ],
       },
