@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { useSearchParams } from 'react-router-dom'
 import ChipLink from '../components/ChipLink'
 import ChipButton from '../components/ChipButton'
 
@@ -9,7 +10,9 @@ const EMAILJS_PUBLIC_KEY = '8TgJToP4JlPgIlFpK'
 
 export default function ContactPage() {
   const formRef = useRef(null)
+  const [searchParams] = useSearchParams()
   const [status, setStatus] = useState('idle') // idle | sending | success | error
+  const message = searchParams.get('message')?.trim() || ''
 
   function onSubmit(e) {
     e.preventDefault()
@@ -42,7 +45,8 @@ export default function ContactPage() {
             <div className='contact-details'>
               <h1 id='contact-title'>Let’s connect</h1>
               <p className='muted'>
-                I love talking about software, people, and how we build better teams and tools. <br />
+                I love talking about software, people, and how we build better teams and tools.{' '}
+                <br />
                 Drop a note below — I’ll get back to you soon.
               </p>
               <div className='contact-links'>
@@ -66,6 +70,7 @@ export default function ContactPage() {
         <div className='section-inner'>
           <section className='contact-card' aria-labelledby='contact-title'>
             <form ref={formRef} className='contact-form' onSubmit={onSubmit}>
+              <input type='hidden' name='subject' value='Portfolio contact' />
               <div className='field'>
                 <label htmlFor='name'>Name</label>
                 <input id='name' name='name' type='text' required disabled={status === 'sending'} />
@@ -86,9 +91,10 @@ export default function ContactPage() {
                   id='message'
                   name='message'
                   rows={6}
+                  defaultValue={message}
                   required
                   disabled={status === 'sending'}
-                ></textarea>
+                />
               </div>
               <div className='actions'>
                 <ChipButton type='submit' disabled={status === 'sending'}>

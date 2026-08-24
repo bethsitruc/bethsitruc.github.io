@@ -11,11 +11,12 @@ export default function Footer() {
         <div className='section-inner footer-inner'>
           <div className='footer-cta' aria-label='Connect'>
             <p>
-              Ready to build better software and stronger teams? <Link to='/contact'>Let’s connect.</Link>
+              Ready to build better software and stronger teams?{' '}
+              <Link to='/contact'>Let’s connect.</Link>
             </p>
           </div>
           <div className='footer-bottom'>
-            <p>&copy; 2025 Bethany Curtis</p>
+            <p>&copy; {new Date().getFullYear()} Bethany Curtis</p>
             <p>
               <Link to='/privacy-policy'>Privacy Policies</Link>
             </p>

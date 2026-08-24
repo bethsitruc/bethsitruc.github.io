@@ -28,10 +28,19 @@ export default function AppDetail() {
   }
 
   return (
-    <CaseStudyTemplate
-      study={app.detail}
-      collectionLabel='Apps'
-      collectionTo='/apps'
-    />
+    <>
+      <CaseStudyTemplate study={app.detail} collectionLabel='Apps' collectionTo='/apps' />
+      <section className='section-block'>
+        <div className='section-inner'>
+          <div className='cta-row'>
+            <div>
+              <h2>Support and feedback</h2>
+              <p className='muted'>Report an issue, share feedback, or suggest a feature.</p>
+            </div>
+            <ChipLink to={`/support/${app.slug}`}>Visit app support</ChipLink>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

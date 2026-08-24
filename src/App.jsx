@@ -13,6 +13,9 @@ import ContactPage from './pages/ContactPage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import Footer from './components/Footer'
 import AppsShowcase from './components/AppsShowcase'
+import ScrollToTop from './components/ScrollToTop'
+import SiteMetadata from './components/SiteMetadata'
+import AppSupportPage from './pages/AppSupportPage'
 
 function Home() {
   return (
@@ -37,90 +40,104 @@ function Home() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route
-        path='/apps'
-        element={
-          <>
-            <Header variant='compact' />
-            <AppsPage />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path='/apps/:slug'
-        element={
-          <>
-            <Header variant='compact' />
-            <AppDetail />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path='/case-studies'
-        element={
-          <>
-            <Header variant='compact' />
-            <main>
-              <CaseStudies />
-            </main>
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path='/about'
-        element={
-          <>
-            <Header variant='compact' />
-            <AboutPage />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path='/case-studies/:slug'
-        element={
-          <>
-            <Header variant='compact' />
-            <CaseStudyDetail />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path='/contact'
-        element={
-          <>
-            <Header variant='compact' />
-            <ContactPage />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path='/privacy-policy'
-        element={
-          <>
-            <Header variant='compact' />
-            <PrivacyPolicyPage />
-            <Footer />
-          </>
-        }
-      />
-      <Route
-        path='/privacy-policy/:slug'
-        element={
-          <>
-            <Header variant='compact' />
-            <PrivacyPolicyPage />
-            <Footer />
-          </>
-        }
-      />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <SiteMetadata />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route
+          path='/apps'
+          element={
+            <>
+              <Header variant='compact' />
+              <AppsPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/apps/:slug'
+          element={
+            <>
+              <Header variant='compact' />
+              <AppDetail />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/case-studies'
+          element={
+            <>
+              <Header variant='compact' />
+              <main>
+                <CaseStudies />
+              </main>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/about'
+          element={
+            <>
+              <Header variant='compact' />
+              <AboutPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/case-studies/:slug'
+          element={
+            <>
+              <Header variant='compact' />
+              <CaseStudyDetail />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/contact'
+          element={
+            <>
+              <Header variant='compact' />
+              <ContactPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/privacy-policy'
+          element={
+            <>
+              <Header variant='compact' />
+              <PrivacyPolicyPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/support/:slug'
+          element={
+            <>
+              <Header variant='compact' />
+              <AppSupportPage />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/privacy-policy/:slug'
+          element={
+            <>
+              <Header variant='compact' />
+              <PrivacyPolicyPage />
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
+    </>
   )
 }

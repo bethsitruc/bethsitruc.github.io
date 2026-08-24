@@ -21,8 +21,8 @@ export const apps = [
         to: '/apps/grounded',
       },
       {
-        label: 'Privacy Policy',
-        to: '/privacy-policy/grounded',
+        label: 'Support',
+        to: '/support/grounded',
         variant: 'ghost',
       },
       {
@@ -207,8 +207,8 @@ export const apps = [
         to: '/apps/flashcards-ios',
       },
       {
-        label: 'Privacy Policy',
-        to: '/privacy-policy/flashcards-ios',
+        label: 'Support',
+        to: '/support/flashcards-ios',
         variant: 'ghost',
       },
       {
@@ -344,8 +344,9 @@ export const apps = [
     slug: 'until-friday',
     name: 'Until Friday',
     subtitle: 'iOS • Budget Buckets • Family Sharing',
-    status: 'In Progress',
-    statusTone: 'progress',
+    status: 'TestFlight',
+    statusTone: 'launching',
+    statusNote: 'Available to invited testers while preparing for App Store review.',
     image: '/images/apps/UntilFriday/icon.png',
     imageAlt: 'Until Friday app icon',
     imageStyle: 'icon',
@@ -362,13 +363,13 @@ export const apps = [
         to: '/apps/until-friday',
       },
       {
-        label: 'Privacy Policy',
-        to: '/privacy-policy/until-friday',
+        label: 'Support',
+        to: '/support/until-friday',
         variant: 'ghost',
       },
       {
-        label: 'Request Preview',
-        to: '/contact?subject=Until%20Friday%20Preview',
+        label: 'Request TestFlight Access',
+        to: '/contact?message=I%27m%20interested%20in%20TestFlight%20access%20for%20Until%20Friday.',
       },
     ],
     detail: {
@@ -432,11 +433,37 @@ export const apps = [
               footer: {
                 title: 'Current Focus',
                 list: [
-                  'Polish the bucket setup and logging flow for quick daily use',
-                  'Validate family sharing and CloudKit sync behavior across devices',
-                  'Refine widget, notification, and trend surfaces before broader testing',
+                  'Prepare the App Store listing and final submission for review',
+                  'Validate family sharing and CloudKit sync behavior with TestFlight testers',
+                  'Refine widget, notification, and trend surfaces from testing feedback',
                 ],
               },
+            },
+          ],
+        },
+        {
+          type: 'gallery',
+          variant: 'mobile',
+          items: [
+            {
+              src: '/images/apps/UntilFriday/screenshots/iphone-buckets.png',
+              alt: 'Until Friday iPhone home screen showing budget buckets and remaining balances',
+              caption: 'See every spending bucket and its remaining balance at a glance',
+            },
+            {
+              src: '/images/apps/UntilFriday/screenshots/iphone-bucket-detail.png',
+              alt: 'Until Friday iPhone bucket detail screen showing refill timing and spending history',
+              caption: 'Bucket details keep refill timing and recent spending together',
+            },
+            {
+              src: '/images/apps/UntilFriday/screenshots/iphone-trends-refills.png',
+              alt: 'Until Friday iPhone trends screen comparing spending across refill periods',
+              caption: 'Compare spending from one refill period to the next',
+            },
+            {
+              src: '/images/apps/UntilFriday/screenshots/iphone-trends-months.png',
+              alt: 'Until Friday iPhone trends screen showing monthly spending comparisons',
+              caption: 'Monthly trends reveal longer-term spending patterns',
             },
           ],
         },
@@ -449,8 +476,8 @@ export const apps = [
                 'A low-friction budget companion for people who think in payday cycles, grocery runs, dinners out, and household spending limits: clear enough to open in seconds, flexible enough to match real refill rhythms, and shareable when more than one person is spending from the same buckets.',
               ],
               cta: {
-                label: 'Request Preview',
-                href: '/contact?subject=Until%20Friday%20Preview',
+                label: 'Request TestFlight Access',
+                href: '/contact?message=I%27m%20interested%20in%20TestFlight%20access%20for%20Until%20Friday.',
               },
             },
           ],
@@ -462,8 +489,9 @@ export const apps = [
     slug: 'friendly-competitions',
     name: 'Friendly Competitions',
     subtitle: 'iOS • Offline-first • Event Scoring',
-    status: 'In Progress',
-    statusTone: 'progress',
+    status: 'TestFlight',
+    statusTone: 'launching',
+    statusNote: 'Available to invited testers while preparing for App Store review.',
     image: '/images/apps/FriendlyCompetitions/icon.png',
     imageAlt: 'Friendly Competitions app icon',
     imageStyle: 'icon',
@@ -480,13 +508,13 @@ export const apps = [
         to: '/apps/friendly-competitions',
       },
       {
-        label: 'Privacy Policy',
-        to: '/privacy-policy/friendly-competitions',
+        label: 'Support',
+        to: '/support/friendly-competitions',
         variant: 'ghost',
       },
       {
-        label: 'Request Preview',
-        to: '/contact?subject=Friendly%20Competitions%20Preview',
+        label: 'Request TestFlight Access',
+        to: '/contact?message=I%27m%20interested%20in%20TestFlight%20access%20for%20Friendly%20Competitions.',
       },
     ],
     detail: {
@@ -545,11 +573,11 @@ export const apps = [
                 'The product has to stay playful and fast while still handling real scoring complexity. The hard part is making setup, voting, lock/finalize states, and result interpretation feel obvious for casual users without oversimplifying the underlying rules.',
               ],
               footer: {
-                title: 'Next Steps',
+                title: 'Current Focus',
                 list: [
-                  'Refine the host dashboard and judge handoff flow',
-                  'Add stronger export and recap options for finished events',
-                  'Polish the visual system and capture screenshots for the portfolio page',
+                  'Prepare the App Store listing and final submission for review',
+                  'Validate the host and judge handoff flows with TestFlight testers',
+                  'Polish exports and recaps based on testing feedback',
                 ],
               },
             },
@@ -595,8 +623,8 @@ export const apps = [
                 'A joyful utility for bake-offs, classroom contests, family voting, or team events: structured enough to keep scoring fair, but light enough that the event still feels social and fun.',
               ],
               cta: {
-                label: 'Request Preview',
-                href: '/contact?subject=Friendly%20Competitions%20Preview',
+                label: 'Request TestFlight Access',
+                href: '/contact?message=I%27m%20interested%20in%20TestFlight%20access%20for%20Friendly%20Competitions.',
               },
             },
           ],

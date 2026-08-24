@@ -12,6 +12,7 @@ function AppCard({ app, className = '', primaryActionOnly = false }) {
       <div className='app-card__content'>
         <div className='app-card__header'>
           <span className={`app-status app-status--${app.statusTone}`}>{app.status}</span>
+          {app.statusNote ? <p className='app-status-note'>{app.statusNote}</p> : null}
           <h3>{app.name}</h3>
           <p className='muted'>{app.subtitle}</p>
         </div>
