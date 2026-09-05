@@ -156,4 +156,32 @@ test.describe('site smoke', () => {
     await expect(page).toHaveURL('/apps/until-friday')
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0)
   })
+
+  test('mobile navigation collapses and app cards stay within the viewport', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 })
+    await page.goto('/apps')
+
+    const menuButton = page.getByRole('button', { name: 'Open navigation menu' })
+    await expect(menuButton).toBeVisible()
+    await expect(page.getByRole('navigation', { name: 'Primary' })).toBeHidden()
+
+    await menuButton.click()
+    await expect(page.getByRole('navigation', { name: 'Primary' })).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Close navigation menu' })).toHaveAttribute(
+      'aria-expanded',
+      'true'
+    )
+
+    await page.keyboard.press('Escape')
+    await expect(page.getByRole('navigation', { name: 'Primary' })).toBeHidden()
+    await expect(menuButton).toHaveAttribute('aria-expanded', 'false')
+
+    const hasHorizontalOverflow = await page.evaluate(
+      () => document.documentElement.scrollWidth > window.innerWidth
+    )
+    expect(hasHorizontalOverflow).toBe(false)
+
+    const firstCardActions = page.locator('.app-card__actions').first()
+    await expect(firstCardActions.getByRole('link')).toHaveCount(3)
+  })
 })

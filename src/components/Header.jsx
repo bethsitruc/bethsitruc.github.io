@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 
 export default function Header({ variant = 'home' }) {
   const location = useLocation()
-  const isHome = variant === 'home'
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
@@ -12,41 +12,51 @@ export default function Header({ variant = 'home' }) {
     { label: 'Contact', path: '/contact' },
   ]
 
-  if (isHome) {
-    // Minimal topbar on home; intro lives in main content
-    return (
-      <header className={'topbar'} id='top'>
-        <div className={'topbar-inner'}>
-          <div className='brand'>
-            <Link to='/' className='brand-link'>
-              Bethany Curtis
-            </Link>
-          </div>
-          <nav aria-label='Primary' className='main-nav'>
-            {navItems.map(item => (
-              <Link key={item.label} to={item.path}>
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      </header>
-    )
-  }
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [location.pathname])
+
+  useEffect(() => {
+    if (!isMenuOpen) return undefined
+
+    const closeOnEscape = event => {
+      if (event.key === 'Escape') setIsMenuOpen(false)
+    }
+
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [isMenuOpen])
 
   return (
-    <header className={'topbar'} id='top'>
-      <div className={'topbar-inner'}>
+    <header className='topbar' id='top'>
+      <div className='topbar-inner'>
         <div className='brand'>
           <Link to='/' className='brand-link'>
             Bethany Curtis
           </Link>
         </div>
-        <nav aria-label='Primary' className='main-nav'>
+        <button
+          type='button'
+          className={`nav-toggle${isMenuOpen ? ' nav-toggle--open' : ''}`}
+          aria-expanded={isMenuOpen}
+          aria-controls='primary-navigation'
+          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          onClick={() => setIsMenuOpen(open => !open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <nav
+          id='primary-navigation'
+          aria-label='Primary'
+          className={`main-nav${isMenuOpen ? ' main-nav--open' : ''}`}
+        >
           {navItems.map(item => (
             <NavLink
               key={item.label}
               to={item.path}
+              onClick={() => setIsMenuOpen(false)}
               className={({ isActive }) =>
                 isActive || location.pathname === item.path ? 'is-active' : undefined
               }
