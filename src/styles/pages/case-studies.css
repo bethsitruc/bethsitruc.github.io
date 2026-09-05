@@ -95,6 +95,14 @@
   margin: 0;
 }
 
+/* Keep detail-page calls to action visually consistent across sections. */
+.case-study-callout .card-actions .btn-chip,
+.cta-row > .btn-chip {
+  inline-size: 11rem;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Case study reusable section */
 .cs-section {
   margin: 1.25rem 0;
@@ -170,5 +178,12 @@
   .case-study-duo {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .case-study-callout .card-actions .btn-chip,
+  .cta-row > .btn-chip {
+    inline-size: 100%;
   }
 }
