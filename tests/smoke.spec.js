@@ -25,19 +25,19 @@ const routes = [
   },
   {
     path: '/apps/until-friday',
-    text: ['Until Friday', 'TestFlight', 'Monthly trends'],
+    text: ['Until Friday', 'View in App Store', 'Monthly trends'],
   },
   {
     path: '/apps/friendly-competitions',
-    text: ['Friendly Competitions', 'TestFlight', 'Share polished results'],
+    text: ['Friendly Competitions', 'View in App Store', 'Share polished results'],
   },
   {
     path: '/support/until-friday',
-    text: ['Until Friday', 'App Support', 'How do I join the TestFlight?'],
+    text: ['Until Friday', 'App Support', 'Where can I download Until Friday?'],
   },
   {
     path: '/support/friendly-competitions',
-    text: ['Friendly Competitions', 'App Support', 'Does judging require an account?'],
+    text: ['Friendly Competitions', 'App Support', 'Where can I download Friendly Competitions?'],
   },
   {
     path: '/privacy-policy',
@@ -86,6 +86,14 @@ test.describe('site smoke', () => {
       'href',
       'https://apps.apple.com/us/app/flashcards-for-families/id6766307410'
     )
+    await expect(page.getByRole('link', { name: 'View in App Store' }).nth(2)).toHaveAttribute(
+      'href',
+      'https://apps.apple.com/us/app/until-friday/id6798798566'
+    )
+    await expect(page.getByRole('link', { name: 'View in App Store' }).nth(3)).toHaveAttribute(
+      'href',
+      'https://apps.apple.com/us/app/friendly-competitions/id6775539829'
+    )
     await expect(
       page.locator('.app-card', { hasText: 'Until Friday' }).getByRole('link', { name: 'Support' })
     ).toHaveAttribute('href', '/support/until-friday')
@@ -130,12 +138,10 @@ test.describe('site smoke', () => {
   })
 
   test('contact message is populated from the URL', async ({ page }) => {
-    await page.goto(
-      '/contact?message=I%27m%20interested%20in%20TestFlight%20access%20for%20Until%20Friday.'
-    )
+    await page.goto('/contact?message=I%20have%20a%20question%20about%20Friendly%20Competitions.')
 
     await expect(page.getByLabel('Message')).toHaveValue(
-      "I'm interested in TestFlight access for Until Friday."
+      'I have a question about Friendly Competitions.'
     )
   })
 

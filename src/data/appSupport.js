@@ -36,11 +36,11 @@ export const appSupport = {
   },
   'until-friday': {
     intro:
-      'Get help with TestFlight access, spending buckets, refill schedules, widgets, alerts, and household sharing.',
+      'Get help with spending buckets, refill schedules, widgets, alerts, household sharing, and the App Store release.',
     questions: [
       {
-        title: 'How do I join the TestFlight?',
-        body: 'Request access below. If testing capacity is available, you will receive an invitation with instructions for installing the current build through Apple TestFlight.',
+        title: 'Where can I download Until Friday?',
+        body: 'Until Friday is available on the App Store for iPhone and iPad. Use the App Store link on the app page to download the latest release.',
       },
       {
         title: 'How do refill schedules work?',
@@ -54,11 +54,11 @@ export const appSupport = {
   },
   'friendly-competitions': {
     intro:
-      'Get help with TestFlight access, competition setup, judging, scoring, standings, and result sharing.',
+      'Get help with competition setup, judging, scoring, standings, result sharing, and the App Store release.',
     questions: [
       {
-        title: 'How do I join the TestFlight?',
-        body: 'Request access below. If testing capacity is available, you will receive an invitation with instructions for installing the current build through Apple TestFlight.',
+        title: 'Where can I download Friendly Competitions?',
+        body: 'Friendly Competitions is available on the App Store for iPhone and iPad. Use the App Store link on the app page to download the latest release.',
       },
       {
         title: 'Does judging require an account?',

@@ -50,7 +50,7 @@ function getMetadata(pathname) {
   const pages = {
     '/apps': [
       'Apps | Bethany Curtis',
-      'Released and currently testing iOS apps designed and built by Bethany Curtis.',
+      'Released iOS apps designed and built by Bethany Curtis, with App Store links, support resources, and product details.',
     ],
     '/about': [
       'About | Bethany Curtis',

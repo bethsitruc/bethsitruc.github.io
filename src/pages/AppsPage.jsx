@@ -7,7 +7,7 @@ export default function AppsPage() {
       <AppsShowcase
         title='Apps'
         titleAs='h1'
-        intro='Released and currently testing products I designed and built. This is the quickest place to see what is live, what is in TestFlight, and where to find support, privacy details, or deeper case studies.'
+        intro='Released products I designed and built. This is the quickest place to explore each app and find its App Store listing, support resources, privacy details, or deeper case study.'
         sectionId='apps-page'
       />
     </main>
